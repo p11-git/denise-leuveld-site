@@ -1,0 +1,2004 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta property="og:title" content="Denise Leuveld Fotografie"><meta property="og:description" content="Voorbeeld van de nieuwe website"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif;background:#fafafa}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>Denise Leuveld Fotografie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#FFFFFF;--inkt:#111111;--grijs:#6F6F6F;--lijn:#E6E6E6;
+  --serif:"Cormorant Garamond","Cormorant",Garamond,"Hoefler Text","Times New Roman",serif;
+  --sans:"Jost","Futura","Avenir Next","Century Gothic","Helvetica Neue",Arial,sans-serif;
+  --rand:clamp(16px,4vw,56px);
+  --kop-h:84px;
+  --balk-h:0px;
+  --gat:8px;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#FFFFFF;color:#111111;font:400 17px/1.75 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;padding-bottom:var(--balk-h)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,p,ul,ol,figure,blockquote,fieldset{margin:0}
+ul,ol{padding:0;list-style:none}
+fieldset{border:0;padding:0;min-width:0}
+button,input,select,textarea{font:inherit;color:inherit}
+em{font-style:italic}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--inkt);outline-offset:3px}
+.op-foto :focus-visible,.inkt :focus-visible{outline-color:#fff}
+
+/* ---------- basis ---------- */
+.wrap{max-width:1320px;margin:0 auto;padding:0 var(--rand)}
+.wrap--smal{max-width:860px}
+.wrap--breed{max-width:1720px;padding:0 clamp(8px,1.6vw,24px)}
+.sectie{padding:clamp(72px,9vw,140px) 0}
+.sectie--krap{padding:clamp(48px,6vw,88px) 0}
+.midden{text-align:center}
+.label{font:500 11.5px/1.6 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--inkt);display:inline-flex;align-items:center;gap:14px}
+.label::before{content:"";width:28px;height:1px;background:currentColor;opacity:.6}
+.midden .label::after{content:"";width:28px;height:1px;background:currentColor;opacity:.6}
+.h1{font:300 clamp(46px,6.6vw,100px)/1.02 var(--serif);letter-spacing:-.005em}
+.h2{font:300 clamp(38px,4.6vw,66px)/1.06 var(--serif);letter-spacing:-.005em}
+.h2 em,.h1 em{font-weight:300}
+.lead{font:400 clamp(22px,2.1vw,29px)/1.5 var(--serif)}
+.tekst p+p{margin-top:1.15em}
+.grijs{color:var(--grijs)}
+.klein{font-size:14.5px;line-height:1.7}
+
+/* ---------- knoppen ---------- */
+.knop{display:inline-flex;align-items:center;justify-content:center;gap:.7em;min-height:54px;padding:0 32px;background:var(--inkt);color:#fff;border:1px solid var(--inkt);font:500 12.5px/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;text-align:center;cursor:pointer;transition:background .25s,color .25s,border-color .25s;border-radius:0}
+.knop:hover{background:#fff;color:var(--inkt)}
+.knop--rand{background:transparent;color:var(--inkt)}
+.knop--rand:hover{background:var(--inkt);color:#fff}
+.knop--wit{background:#fff;color:var(--inkt);border-color:#fff}
+.knop--wit:hover{background:transparent;color:#fff}
+.knop--lijnwit{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.knop--lijnwit:hover{background:#fff;color:var(--inkt);border-color:#fff}
+.knop--klein{min-height:44px;padding:0 22px;font-size:11.5px;letter-spacing:.16em}
+.knoppen{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.midden .knoppen{justify-content:center}
+
+/* ---------- header (Atelier; logo links, menu rechts) ---------- */
+.kop{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+.kop.is-gescrold{border-bottom-color:var(--lijn);box-shadow:0 10px 30px -24px rgba(0,0,0,.35)}
+.kop__binnen{height:var(--kop-h);display:flex;align-items:center;gap:28px;padding:0 var(--rand)}
+.kop__nav{display:flex;align-items:center;gap:clamp(18px,2.1vw,34px)}
+.navlink{position:relative;font:500 12px/1 var(--sans);letter-spacing:.17em;text-transform:uppercase;text-decoration:none;padding:14px 0;background:none;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;color:var(--inkt)}
+.navlink::after{content:"";position:absolute;left:0;right:.17em;bottom:6px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.navlink:hover::after,.navlink.is-actief::after{transform:scaleX(1)}
+.navlink svg{width:9px;height:9px;transition:transform .25s}
+.woordmerk{font:400 26px/1 var(--serif);letter-spacing:.34em;text-transform:uppercase;text-decoration:none;white-space:nowrap;color:var(--inkt);margin-right:auto}
+.kop__cta{margin-left:6px;white-space:nowrap}
+.kop__cta-tablet,.menuknop{display:none}
+.shoots{position:relative}
+.shoots__paneel{position:absolute;left:50%;top:100%;padding-top:12px;opacity:0;visibility:hidden;transform:translate(-50%,6px);transition:opacity .25s,transform .25s,visibility .25s;z-index:5}
+.shoots:hover .shoots__paneel,.shoots:focus-within .shoots__paneel{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.shoots:hover .navlink svg,.shoots:focus-within .navlink svg{transform:rotate(180deg)}
+.shoots__binnen{display:grid;grid-template-columns:repeat(4,136px);gap:16px;background:#fff;border:1px solid var(--lijn);padding:22px;box-shadow:0 30px 60px -36px rgba(0,0,0,.35)}
+.shoots__item{text-decoration:none;display:grid;gap:12px}
+.shoots__item img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:opacity .25s}
+.shoots__item:hover img{opacity:.85}
+.shoots__item span{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase}
+.shoots__item.is-actief span{text-decoration:underline;text-underline-offset:5px}
+
+.menuknop{align-items:center;gap:10px;background:none;border:0;padding:10px 0 10px 10px;cursor:pointer;font:500 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;min-height:44px}
+.menuknop__lijnen{width:22px;height:9px;position:relative}
+.menuknop__lijnen::before,.menuknop__lijnen::after{content:"";position:absolute;left:0;right:0;height:1.5px;background:var(--inkt);transition:transform .3s,top .3s}
+.menuknop__lijnen::before{top:0}.menuknop__lijnen::after{top:7.5px}
+.menuknop[aria-expanded="true"] .menuknop__lijnen::before{top:4px;transform:rotate(45deg)}
+.menuknop[aria-expanded="true"] .menuknop__lijnen::after{top:4px;transform:rotate(-45deg)}
+
+.mobmenu{position:fixed;inset:var(--kop-h) 0 0 0;z-index:58;background:#fff;overflow-y:auto;padding:28px var(--rand) calc(40px + var(--balk-h));border-top:1px solid var(--lijn)}
+.mobmenu__lijst a{display:block;text-decoration:none;font:300 36px/1.15 var(--serif);padding:10px 0;border-bottom:1px solid var(--lijn)}
+.mobmenu__lijst a[href="#shoots"]{border-bottom:0}
+.mobmenu__lijst a.is-actief{font-style:italic}
+.mobmenu__sub{display:flex;flex-wrap:wrap;gap:8px 22px;padding:2px 0 16px;border-bottom:1px solid var(--lijn)}
+.mobmenu__lijst .mobmenu__sub a{font-size:24px;border:0;padding:4px 0;color:var(--grijs)}
+.mobmenu .knop{width:100%;margin-top:28px}
+
+/* compacter menu op kleinere laptops, zodat alles op één regel past */
+@media (max-width:1599px){.kop__binnen{gap:20px}.kop__nav{gap:clamp(14px,1.4vw,22px)}.navlink{letter-spacing:.12em;font-size:11px}.woordmerk{font-size:21px;letter-spacing:.26em}.kop__cta{padding:0 16px;letter-spacing:.12em;font-size:11px}}
+@media (max-width:1239px){
+  .kop__nav{display:none}
+  .kop__binnen{gap:18px}
+  .menuknop,.kop__cta-tablet{display:inline-flex}
+}
+@media (max-width:767px){
+  :root{--kop-h:64px;--balk-h:calc(68px + env(safe-area-inset-bottom,0px))}
+  .kop__cta-tablet{display:none}
+  .woordmerk{font-size:19px;letter-spacing:.24em}
+  body{font-size:16.5px}
+}
+
+/* ---------- mobiele onderbalk ---------- */
+.onderbalk{display:none}
+@media (max-width:767px){
+  .onderbalk{display:grid;grid-template-columns:1.25fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--lijn);padding:8px 12px calc(8px + env(safe-area-inset-bottom,0px))}
+  .onderbalk .knop{min-height:50px;padding:0 10px;font-size:11.5px;letter-spacing:.14em}
+}
+
+/* ---------- pagina's ---------- */
+.pagina:not([hidden]){animation:verschijn .6s ease both}
+@keyframes verschijn{from{opacity:0}to{opacity:1}}
+
+/* ---------- home: drieluik ---------- */
+.drieluik{position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:5px;background:#0c0c0c;height:clamp(560px,calc(100svh - var(--kop-h)),980px);overflow:hidden;color:#fff}
+.drieluik__vak{position:relative;overflow:hidden}
+.drieluik__vak img{width:100%;height:100%;object-fit:cover;animation:inzoom 2.6s cubic-bezier(.2,.6,.2,1) both}
+.drieluik__vak:nth-child(2) img{animation-delay:.12s}
+.drieluik__vak:nth-child(3) img{animation-delay:.24s}
+@keyframes inzoom{from{transform:scale(1.07);opacity:.2}to{transform:none;opacity:1}}
+.drieluik::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 55% at 50% 52%,rgba(10,10,10,.52),rgba(10,10,10,.26) 75%),linear-gradient(180deg,rgba(10,10,10,.18),rgba(10,10,10,0) 30%,rgba(10,10,10,0) 70%,rgba(10,10,10,.28));pointer-events:none}
+.drieluik__tekst{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 var(--rand);text-shadow:0 1px 30px rgba(0,0,0,.25)}
+.drieluik__tekst .bovenregel{font:500 11.5px/1.7 var(--sans);letter-spacing:.32em;text-transform:uppercase;margin-bottom:26px}
+.drieluik__tekst .bovenregel b{font-weight:500;display:inline-block;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.7);margin-bottom:10px}
+.drieluik__kop{font:300 clamp(50px,7vw,112px)/.98 var(--serif);letter-spacing:-.01em}
+.drieluik__kop em{display:block}
+.drieluik__sub{max-width:560px;margin:28px auto 36px;font:400 17.5px/1.7 var(--sans)}
+@media (max-width:767px){
+  .drieluik{grid-template-columns:1fr;height:max(540px,calc(100svh - var(--kop-h) - var(--balk-h)))}
+  .drieluik__vak:not(:nth-child(2)){display:none}
+  .drieluik__vak:nth-child(2) img{object-position:50% 40%}
+  .drieluik__tekst .bovenregel{font-size:10.5px;letter-spacing:.26em;margin-bottom:18px}
+  .drieluik__sub{font-size:16px;margin:20px auto 28px}
+  .drieluik .knoppen{flex-direction:column;align-items:stretch;width:100%;max-width:330px}
+}
+
+/* ---------- awards / keurmerken ---------- */
+.awards{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(14px,2.2vw,32px)}
+.zegel{position:relative;width:236px;min-height:136px;padding:22px 20px 20px;border:1px solid var(--inkt);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#fff}
+.zegel::before{content:"";position:absolute;inset:5px;border:1px solid var(--inkt);pointer-events:none}
+.zegel::after{content:"";position:absolute;top:-5px;left:50%;width:9px;height:9px;margin-left:-4.5px;background:#fff;border:1px solid var(--inkt);transform:rotate(45deg)}
+.zegel__bron{font:500 10.5px/1.4 var(--sans);letter-spacing:.28em;text-transform:uppercase}
+.zegel__titel{font:400 31px/1.05 var(--serif);font-style:italic;margin:8px 0 6px}
+.zegel__jaar{font:400 12px/1 var(--sans);letter-spacing:.3em}
+.zegel--breed{width:300px}
+.zegel--breed .zegel__titel{font-size:21px;line-height:1.2;margin:10px 0 0}
+.awards-band{padding:clamp(44px,5vw,64px) 0;border-bottom:1px solid var(--lijn)}
+@media (max-width:767px){
+  .awards{gap:12px}
+  .zegel{width:calc(50% - 6px);min-height:122px;padding:18px 10px}
+  .zegel--breed{width:100%}
+  .zegel__titel{font-size:26px}
+}
+
+/* ---------- welkom collage ---------- */
+.welkom{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(12px,2vw,28px);row-gap:28px;align-items:start}
+.welkom__a{grid-column:1/6;grid-row:1/3}
+.welkom__tekst{grid-column:7/13;grid-row:1;align-self:end;padding:clamp(20px,5vw,80px) 0 clamp(10px,2vw,30px)}
+.welkom__tekst .lead{margin-top:26px;max-width:520px}
+.welkom__b{grid-column:7/10;grid-row:2}
+.welkom__c{grid-column:10/13;grid-row:2;margin-top:clamp(40px,5vw,80px)}
+.welkom img{width:100%;aspect-ratio:2/3;object-fit:cover}
+@media (max-width:767px){
+  .welkom{grid-template-columns:1fr 1fr;row-gap:12px;column-gap:10px}
+  .welkom__tekst{grid-column:1/3;grid-row:1;padding:0 0 18px}
+  .welkom__a{grid-column:1/3;grid-row:2}
+  .welkom__a img{aspect-ratio:4/5}
+  .welkom__b{grid-column:1/2;grid-row:3}
+  .welkom__c{grid-column:2/3;grid-row:3;margin-top:44px}
+}
+
+/* ---------- foto-elementen ---------- */
+.foto{display:block;position:relative;overflow:hidden;cursor:zoom-in;background:#f2f2f2}
+.foto img{width:100%;height:auto;aspect-ratio:var(--a);object-fit:cover;transition:transform 1s cubic-bezier(.2,.6,.2,1),opacity .4s}
+.foto:hover img{transform:scale(1.03)}
+.foto:focus-visible{outline-offset:-4px;outline:2px solid #fff;box-shadow:inset 0 0 0 4px var(--inkt)}
+
+/* fotomuur (home) */
+.muur{display:flex;flex-direction:column;gap:var(--gat)}
+.muur__rij{display:flex;gap:var(--gat)}
+.muur__rij .foto{flex:var(--a) 1 0;min-width:0}
+@media (max-width:767px){
+  .muur{display:grid;grid-template-columns:1fr 1fr;grid-auto-flow:dense;gap:6px}
+  .muur__rij{display:contents}
+  .muur .foto--l{grid-column:span 2}
+}
+
+/* rechtgetrokken raster (galerijen) */
+.raster{--rij-h:400px;display:flex;flex-wrap:wrap;gap:var(--gat)}
+.raster::after{content:"";flex-grow:999999}
+.raster.is-geschikt::after{display:none}
+.raster .foto{flex-grow:calc(var(--a) * 100);flex-basis:calc(var(--a) * var(--rij-h));min-width:0}
+@media (max-width:1100px){.raster{--rij-h:300px}}
+@media (max-width:767px){.raster{--rij-h:175px;--gat:6px}}
+
+/* ---------- strook-headers (subpagina's) ---------- */
+.strook{position:relative;height:clamp(440px,74vh,760px);display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden;background:#111}
+.strook>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:inzoom 2.2s cubic-bezier(.2,.6,.2,1) both}
+.strook::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.30),rgba(10,10,10,.38) 55%,rgba(10,10,10,.52))}
+.strook__tekst{position:relative;z-index:2;padding:0 var(--rand);max-width:1100px;text-shadow:0 1px 30px rgba(0,0,0,.25)}
+.strook__tekst .label{color:#fff;margin-bottom:22px}
+.strook__tekst .label::before,.strook__tekst .label::after{content:"";width:28px;height:1px;background:#fff;opacity:.7}
+.strook__tekst .knoppen{justify-content:center;margin-top:34px}
+.strook .h1--lang{font-size:clamp(38px,4.8vw,72px);line-height:1.08}
+.strook--kort{height:clamp(320px,50vh,500px)}
+@media (max-width:767px){.strook{height:clamp(380px,62svh,560px)}.strook--kort{height:clamp(260px,40svh,380px)}}
+
+/* ---------- fotoband met tekst ---------- */
+.band{position:relative;min-height:clamp(480px,86vh,860px);display:grid;place-items:center;color:#fff;text-align:center;overflow:hidden;background:#111}
+.band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band::after{content:"";position:absolute;inset:0;background:rgba(10,10,10,.5)}
+.band--cta::after{background:linear-gradient(180deg,rgba(10,10,10,.5),rgba(10,10,10,.62))}
+.band__tekst{position:relative;z-index:2;padding:80px var(--rand)}
+.band__citaat{font:300 clamp(30px,3.6vw,52px)/1.28 var(--serif);max-width:980px;margin:0 auto}
+.band__citaat em{display:block;margin-top:.5em;font-size:1.1em}
+.band .h2{margin:0 auto;max-width:900px}
+.band p.band__p{max-width:620px;margin:26px auto 36px;font-size:17.5px}
+
+/* ---------- splits ---------- */
+.split{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(16px,2.4vw,40px);align-items:center}
+.split__foto img{width:100%;object-fit:cover}
+.split--stappen{align-items:start}
+.split--stappen .split__tekst{grid-column:1/7}
+.split--stappen .split__foto{grid-column:8/13;position:sticky;top:calc(var(--kop-h) + 32px)}
+.split--stappen .split__foto img{aspect-ratio:2/3}
+@media (max-width:900px){
+  .split{grid-template-columns:1fr;row-gap:36px}
+  .split>*{grid-column:1/-1!important}
+  .split--stappen .split__foto{position:static;order:-1}
+  .split--stappen .split__foto img{aspect-ratio:4/5}
+}
+
+/* stappen */
+.stappenlijst{margin:40px 0 44px;border-bottom:1px solid var(--lijn)}
+.stappenlijst li{display:grid;grid-template-columns:66px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--lijn)}
+.nr{font:300 34px/1 var(--serif);font-style:italic;color:var(--inkt)}
+.stap-titel{font:500 12.5px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;margin:6px 0 6px}
+.stappenlijst p,.stappengrid p{color:var(--grijs);font-size:15.5px;line-height:1.7}
+@media (max-width:767px){.split--stappen .split__foto{display:none}.contact__intro .lead{font-size:20px}}
+.stappengrid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--inkt);margin-top:48px}
+.stappengrid li{padding:36px clamp(16px,2.6vw,40px) 42px 0;border-bottom:1px solid var(--lijn)}
+.stappengrid li:not(:nth-child(3n+1)){padding-left:clamp(16px,2.6vw,40px);border-left:1px solid var(--lijn)}
+.stappengrid .nr{font-size:58px;display:block;margin-bottom:18px}
+@media (max-width:900px){
+  .stappengrid{grid-template-columns:1fr}
+  .stappengrid li,.stappengrid li:not(:nth-child(3n+1)){padding:28px 0 30px;border-left:0}
+  .stappengrid li{display:grid;grid-template-columns:62px 1fr;gap:4px 16px}
+  .stappengrid .nr{font-size:38px;grid-row:1/3;margin:0}
+}
+
+/* investering kader */
+.kader{position:relative;border:1px solid var(--inkt);padding:clamp(40px,6vw,88px) clamp(22px,6vw,96px);text-align:center;background:#fff}
+.kader::before{content:"";position:absolute;inset:7px;border:1px solid var(--inkt);pointer-events:none}
+.prijs-groot{font:300 clamp(54px,7vw,96px)/1 var(--sans);letter-spacing:-.02em;margin:22px 0 20px}
+.prijs-groot span{font:italic 300 .5em/1 var(--serif);letter-spacing:0;margin-right:.3em;vertical-align:.32em}
+.kader__intro{font:400 clamp(20px,1.8vw,25px)/1.45 var(--serif);font-style:italic;max-width:640px;margin:0 auto}
+.inclusief{display:grid;grid-template-columns:1fr 1fr;column-gap:48px;text-align:left;margin:44px auto 48px;max-width:980px;border-top:1px solid var(--lijn)}
+.inclusief li{position:relative;padding:18px 0 18px 34px;border-bottom:1px solid var(--lijn);font-size:16px;line-height:1.55}
+.inclusief li::before{content:"";position:absolute;left:4px;top:25px;width:12px;height:6px;border-left:1.5px solid var(--inkt);border-bottom:1.5px solid var(--inkt);transform:rotate(-45deg)}
+.kader__na{max-width:720px;margin:-12px auto 40px;color:var(--grijs);font-size:15.5px}
+@media (max-width:767px){.inclusief{grid-template-columns:1fr;margin:32px 0 36px}.kader::before{inset:5px}}
+
+/* reviews (inkt-band) */
+.inkt{background:var(--inkt);color:#fff}
+.reviews__kop{text-align:center;margin-bottom:clamp(44px,5vw,72px)}
+.reviews__kop .label{color:#fff}
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.review{padding:0 clamp(20px,4vw,64px);display:flex;flex-direction:column}
+.review+.review{border-left:1px solid rgba(255,255,255,.18)}
+.review__q{font:300 clamp(23px,2vw,29px)/1.5 var(--serif);font-style:italic}
+.review__q::before{content:"\201C";display:block;font:300 90px/0.6 var(--serif);font-style:normal;margin:18px 0 6px;opacity:.9}
+.review__naam{margin-top:28px;font:500 11.5px/1.5 var(--sans);letter-spacing:.28em;text-transform:uppercase}
+.review__naam::before{content:"";display:inline-block;width:28px;height:1px;background:currentColor;vertical-align:middle;margin-right:14px;opacity:.7}
+@media (max-width:900px){.reviews{grid-template-columns:1fr;gap:56px}.review{padding:0}.review+.review{border-left:0;border-top:1px solid rgba(255,255,255,.18);padding-top:40px}}
+
+/* reviews-slider (home): 2 zichtbaar op desktop, 1 op mobiel; pijlen, toetsenbord en swipe */
+.rslider__baan{display:flex;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;clip-path:inset(0 0 0 1px)}
+.rslider__baan::-webkit-scrollbar{display:none}
+.rslider__baan:focus-visible{outline-offset:-4px}
+.rslider__baan>.review{flex:0 0 50%;min-width:0;scroll-snap-align:start;border-left:1px solid rgba(255,255,255,.18)}
+.rslider__knoppen{display:flex;justify-content:center;gap:12px;margin-top:clamp(40px,4.5vw,64px)}
+.rslider__pijl{width:54px;height:54px;display:grid;place-items:center;padding:0;background:transparent;border:1px solid rgba(255,255,255,.35);cursor:pointer;transition:border-color .25s}
+.rslider__pijl:hover{border-color:#fff}
+.rslider__pijl svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:1.2}
+@media (max-width:900px){
+  .rslider__baan{margin:0 calc(-1 * var(--rand))}
+  .rslider__baan>.review{flex-basis:100%;padding:0 var(--rand);border-top:0;padding-top:0}
+}
+
+/* reviews op de shootpagina's (licht) */
+.reviews--licht .review+.review{border-left-color:var(--lijn)}
+.reviews--licht .review:first-child{padding-left:0}
+.reviews--licht .review:last-child{padding-right:0}
+.reviews--3{grid-template-columns:repeat(3,1fr)}
+.reviews--3 .review{padding:0 clamp(20px,3vw,44px)}
+.reviews--3 .review__q{font-size:clamp(21px,1.75vw,25px)}
+.reviews--rij{margin-top:clamp(56px,6vw,96px);padding-top:clamp(44px,5vw,72px);border-top:1px solid var(--lijn)}
+@media (max-width:900px){
+  .reviews--3{grid-template-columns:1fr}
+  .reviews--3 .review__q{font-size:23px}
+  .reviews--licht .review{padding:0}
+  .reviews--licht .review+.review{border-left:0;border-top:1px solid var(--lijn);padding-top:40px}
+}
+/* reviews op #tarieven en #contact */
+.reviews[hidden]{display:none}
+.tarief-reviews{padding:clamp(72px,8vw,120px) 0 0}
+
+/* los citaat (licht) */
+.citaat{font:300 clamp(25px,2.4vw,34px)/1.45 var(--serif);font-style:italic}
+.citaat::before{content:"\201C";display:block;font:300 96px/.6 var(--serif);font-style:normal;margin:10px 0 10px}
+.citaat-naam{margin-top:26px;font:500 11.5px/1.5 var(--sans);letter-spacing:.28em;text-transform:uppercase}
+.citaat-naam::before{content:"";display:inline-block;width:28px;height:1px;background:currentColor;vertical-align:middle;margin-right:14px;opacity:.7}
+
+/* over kort */
+.over-kort .split__foto{grid-column:1/6}
+.over-kort .split__foto img{aspect-ratio:4/5}
+.over-kort .split__tekst{grid-column:7/13}
+.over-kort .lead{margin:26px 0 38px}
+
+/* shootkaarten */
+.kaarten{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,28px)}
+.kaart{display:flex;flex-direction:column}
+.kaart__foto{display:block;overflow:hidden}
+.kaart__foto img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1s cubic-bezier(.2,.6,.2,1)}
+.kaart__foto:hover img{transform:scale(1.03)}
+.kaart__titel{font:300 clamp(34px,3vw,46px)/1 var(--serif);text-transform:uppercase;letter-spacing:.14em;margin:28px 0 14px}
+.kaart p{color:var(--grijs);font-size:16px;line-height:1.7;flex:1}
+.kaart .knop{margin-top:26px;align-self:flex-start}
+@media (max-width:900px){.kaarten{grid-template-columns:1fr;gap:56px}}
+
+/* ---------- tekstblokken subpagina's ---------- */
+.intro{text-align:center}
+.intro .lead{margin:0 auto;max-width:880px}
+.intro p:not(.lead){max-width:680px;margin:24px auto 0}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:var(--gat)}
+.duo .foto img{aspect-ratio:4/5}
+@media (max-width:767px){.duo{gap:6px}}
+.tekst-split .split__foto{grid-column:1/8}
+.tekst-split .split__foto img{aspect-ratio:3/2}
+.tekst-split .split__tekst{grid-column:9/13}
+.tekst-split--om .split__foto{grid-column:6/13;grid-row:1}
+.tekst-split--om .split__tekst{grid-column:1/5;grid-row:1}
+.staand .split__foto img{aspect-ratio:4/5}
+.blokken{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px);border-top:1px solid var(--inkt);padding-top:44px}
+.blok h3{font:400 clamp(24px,2vw,30px)/1.2 var(--serif);margin:14px 0 16px}
+.blok p{color:var(--grijs);font-size:15.5px;line-height:1.75}
+@media (max-width:900px){.blokken{grid-template-columns:1fr;gap:40px}}
+.subkop{font:300 clamp(32px,3.2vw,46px)/1.1 var(--serif);margin-bottom:22px}
+
+/* pakketkaarten */
+.pakketten{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pakket{position:relative;border:1px solid var(--lijn);padding:38px 28px 34px;display:flex;flex-direction:column;background:#fff;transition:border-color .3s}
+.pakket:hover{border-color:var(--inkt)}
+.pakket__naam{font:500 12px/1.4 var(--sans);letter-spacing:.24em;text-transform:uppercase}
+.pakket__prijs{font:300 46px/1 var(--sans);margin:18px 0 26px;letter-spacing:-.02em}
+.pakket__prijs--tekst{font:italic 300 42px/1.1 var(--serif);letter-spacing:0}
+.pakket ul{border-top:1px solid var(--inkt)}
+.pakket li{padding:12px 0;border-bottom:1px solid var(--lijn);font-size:15px;line-height:1.55}
+.pakket-noot{margin-top:28px;color:var(--grijs);font-size:15px;max-width:760px}
+@media (max-width:1100px){.pakketten{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.pakketten{grid-template-columns:1fr}.pakket__prijs{font-size:42px}}
+
+/* tarieven */
+.tarief-bruiloft{border:1px solid var(--inkt);position:relative;display:grid;grid-template-columns:5fr 7fr}
+.tarief-bruiloft::before{content:"";position:absolute;inset:7px;border:1px solid var(--inkt);pointer-events:none;z-index:2}
+.tarief-bruiloft__foto img{width:100%;height:100%;object-fit:cover;min-height:100%}
+.tarief-bruiloft__foto{padding:7px 0 7px 7px}
+.tarief-bruiloft__tekst{padding:clamp(36px,5vw,72px) clamp(22px,5vw,72px)}
+.tarief-bruiloft .inclusief{grid-template-columns:1fr;margin:30px 0 36px}
+.tarief-bruiloft .prijs-groot{margin:14px 0 14px}
+.tarieven3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,28px);margin-top:clamp(28px,3vw,44px)}
+.tarief{border:1px solid var(--lijn);padding:38px clamp(20px,2.4vw,34px) 34px;display:flex;flex-direction:column}
+.tarief h2{font:300 40px/1 var(--serif);text-transform:uppercase;letter-spacing:.14em;margin-bottom:24px}
+.prijsrijen{border-top:1px solid var(--inkt);margin-bottom:30px;flex:1}
+.prijsrijen li{padding:14px 0;border-bottom:1px solid var(--lijn)}
+.prijsrij{display:flex;align-items:baseline;gap:10px}
+.prijsrij b{font:500 12px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase}
+.prijsrij i{flex:1;border-bottom:1px dotted #bdbdbd;transform:translateY(-4px)}
+.prijsrij span{font:400 19px/1 var(--sans);white-space:nowrap}
+.prijsrij span em{font:italic 400 22px/1 var(--serif)}
+.prijsrijen small{display:block;color:var(--grijs);font-size:13.5px;line-height:1.55;margin-top:6px}
+.tarief .knop{align-self:flex-start}
+@media (max-width:1000px){.tarieven3{grid-template-columns:1fr}.tarief-bruiloft{grid-template-columns:1fr}.tarief-bruiloft__foto{padding:7px 7px 0}.tarief-bruiloft__foto img{aspect-ratio:3/2}}
+
+/* portfolio filter */
+.filter{position:sticky;top:var(--kop-h);z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--lijn)}
+.filter__lijst{display:flex;flex-wrap:wrap;justify-content:center;gap:4px clamp(10px,3vw,40px);padding:14px var(--rand)}
+.filter button{background:none;border:0;cursor:pointer;padding:10px 2px;font:500 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--grijs);position:relative;min-height:44px}
+.filter button[aria-pressed="true"]{color:var(--inkt)}
+.filter button[aria-pressed="true"]::after{content:"";position:absolute;left:0;right:.2em;bottom:6px;height:1px;background:var(--inkt)}
+.filter button:hover{color:var(--inkt)}
+@media (max-width:767px){.filter button{letter-spacing:.14em;font-size:11.5px}}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:2/3;object-fit:cover}
+.over-grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(16px,2.4vw,40px);row-gap:clamp(40px,6vw,90px);align-items:center}
+.over-grid__f1{grid-column:1/6}
+.over-grid__t1{grid-column:7/12}
+.over-grid__t2{grid-column:2/7;grid-row:2}
+.over-grid__f2{grid-column:8/13;grid-row:2}
+@media (max-width:900px){.over-grid{grid-template-columns:1fr}.over-grid>*{grid-column:1/-1!important;grid-row:auto!important}.over-grid__f2{order:3}.over-grid__t2{order:4}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:5fr 7fr;column-gap:clamp(24px,5vw,96px);row-gap:48px;grid-template-areas:"intro form" "touch form";align-items:start}
+.contact__intro{grid-area:intro}
+.contact__form{grid-area:form}
+.contact__touch{grid-area:touch}
+.liefs{font:400 30px/1.2 var(--serif);font-style:italic;margin-top:22px}
+.gegevens{margin-top:22px;border-top:1px solid var(--lijn)}
+.gegevens li{border-bottom:1px solid var(--lijn)}
+.gegevens a,.gegevens span{display:flex;align-items:center;gap:14px;padding:14px 0;text-decoration:none;font-size:16px}
+.gegevens a:hover{text-decoration:underline;text-underline-offset:4px}
+.gegevens svg{width:18px;height:18px;flex:none;stroke:var(--inkt);fill:none;stroke-width:1.3}
+@media (max-width:900px){.contact{grid-template-columns:1fr;grid-template-areas:"intro" "form" "touch"}}
+
+.formkaart{border:1px solid var(--inkt);padding:clamp(24px,4vw,52px);position:relative;background:#fff}
+.stapper{display:flex;align-items:center;gap:16px;margin-bottom:34px}
+.stapper__tekst{font:500 11.5px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;white-space:nowrap}
+.stapper__balk{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.stapper__balk span{height:2px;background:var(--lijn);transition:background .3s}
+.stapper__balk span.aan{background:var(--inkt)}
+.velden{display:grid;grid-template-columns:1fr 1fr;gap:22px 20px}
+.veld{display:flex;flex-direction:column;gap:8px;min-width:0}
+.veld--vol{grid-column:1/-1}
+.veld[hidden]{display:none}
+.veld label,.veld .veldlabel{font:500 11.5px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase}
+.veld input:not([type="checkbox"]):not([type="radio"]),.veld select,.veld textarea{width:100%;min-height:52px;padding:12px 14px;border:1px solid #cfcfcf;background:#fff;border-radius:0;font-size:16px;line-height:1.4;appearance:none;-webkit-appearance:none}
+.veld select{background-image:linear-gradient(45deg,transparent 50%,#111 50%),linear-gradient(135deg,#111 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 15px) 50%;background-size:5px 5px;background-repeat:no-repeat;padding-right:40px}
+.veld textarea{min-height:130px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--inkt);box-shadow:0 0 0 1px var(--inkt)}
+.veld [aria-invalid="true"]{border-color:#9b1c1c;box-shadow:0 0 0 1px #9b1c1c}
+.fout{color:#9b1c1c;font-size:13.5px;line-height:1.4}
+.fout:empty{display:none}
+.vink{display:flex;align-items:center;gap:12px;cursor:pointer;font-size:15px;min-height:44px}
+.vink input{width:20px;height:20px;accent-color:var(--inkt);margin:0}
+.form-knoppen{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.bedankt{text-align:center;padding:40px 0}
+.bedankt p:first-child{font:300 clamp(30px,3vw,42px)/1.2 var(--serif)}
+@media (max-width:600px){.velden{grid-template-columns:1fr}.form-knoppen .knop{flex:1}}
+
+/* ---------- footer ---------- */
+.voet{border-top:1px solid var(--lijn);padding:clamp(64px,7vw,100px) 0 36px;background:#fff}
+.voet__top{text-align:center;padding-bottom:clamp(40px,5vw,64px)}
+.voet__top .woordmerk{font-size:clamp(24px,2.6vw,34px)}
+.voet__quote{font:300 clamp(24px,2.4vw,34px)/1.3 var(--serif);font-style:italic;margin-top:18px}
+.voet__grid{display:grid;grid-template-columns:1.1fr 1.3fr 1.6fr;gap:40px;padding:44px 0;border-top:1px solid var(--lijn);border-bottom:1px solid var(--lijn)}
+.voet__menu{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;align-content:start}
+.voet__menu a,.voet__contact a,.voet__contact span{font-size:15px;line-height:1.6;text-decoration:none;display:block;padding:4px 0}
+.voet__menu a:hover,.voet__contact a:hover{text-decoration:underline;text-underline-offset:4px}
+.voet .awards{justify-content:flex-start;gap:10px;align-items:flex-start;align-content:flex-start;align-self:start}
+.voet .zegel{width:auto;min-height:0;padding:14px 16px 12px;flex:1 1 120px}
+.voet .zegel::before{inset:3px}
+.voet .zegel::after{display:none}
+.voet .zegel__bron{font-size:9.5px;letter-spacing:.22em}
+.voet .zegel__titel{font-size:19px;margin:4px 0 3px}
+.voet .zegel--breed{flex:2 1 220px}
+.voet .zegel--breed .zegel__titel{font-size:16px}
+.voet .zegel__jaar{font-size:10.5px}
+.voet__onder{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:26px;font-size:13px;color:var(--grijs)}
+@media (max-width:900px){.voet__grid{grid-template-columns:1fr}}
+
+/* ---------- lightbox ---------- */
+.lb{position:fixed;inset:0;z-index:100;background:#fff;display:grid;grid-template-rows:auto 1fr;touch-action:pan-y}
+.lb__balk{display:flex;justify-content:space-between;align-items:center;padding:14px var(--rand)}
+.lb__teller{font:500 12px/1 var(--sans);letter-spacing:.24em}
+.lb__sluit{background:none;border:0;cursor:pointer;width:48px;height:48px;display:grid;place-items:center;margin-right:-12px}
+.lb__sluit svg,.lb__pijl svg{width:26px;height:26px;stroke:var(--inkt);fill:none;stroke-width:1.2}
+.lb__fig{display:grid;place-items:center;padding:0 clamp(8px,7vw,110px) clamp(16px,3vh,36px);min-height:0}
+.lb__fig img{max-width:100%;max-height:calc(100svh - 110px);width:auto;height:auto;object-fit:contain;transition:opacity .25s}
+.lb__fig img.laadt{opacity:.25}
+.lb__pijl{position:absolute;top:50%;transform:translateY(-50%);width:56px;height:56px;display:grid;place-items:center;background:rgba(255,255,255,.85);border:1px solid var(--lijn);cursor:pointer}
+.lb__pijl:hover{border-color:var(--inkt)}
+.lb__pijl--vorige{left:clamp(8px,2vw,32px)}
+.lb__pijl--volgende{right:clamp(8px,2vw,32px)}
+@media (max-width:767px){.lb__pijl{top:auto;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:none;width:52px;height:52px}.lb__fig img{max-height:calc(100svh - 170px)}.lb__fig{padding-bottom:84px}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+/* ---------- shootspagina ---------- */
+.shootlijst{display:grid;gap:clamp(80px,9vw,140px)}
+.shootblok__kop{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(16px,2.4vw,40px);align-items:end;margin-bottom:clamp(28px,3vw,44px)}
+.shootblok__kop>:first-child{grid-column:1/6}
+.shootblok__kop>:last-child{grid-column:7/13}
+.shootblok__kop .h2{margin-top:18px}
+.shootblok__kop .lead{max-width:560px;margin-bottom:26px}
+.shootblok__fotos{display:grid;grid-template-columns:repeat(5,1fr);grid-auto-rows:clamp(240px,26vw,400px);gap:clamp(6px,.8vw,10px)}
+.shootblok__fotos .foto{display:block;overflow:hidden;background:#eee}
+.shootblok__fotos .foto--l{grid-column:span 2}
+.shootblok__fotos img{width:100%;height:100%;object-fit:cover}
+@media (max-width:900px){
+  .shootblok__kop{grid-template-columns:1fr;row-gap:18px}
+  .shootblok__kop>:first-child,.shootblok__kop>:last-child{grid-column:1/-1}
+  .shootblok__fotos{grid-template-columns:repeat(3,1fr);grid-auto-rows:auto;gap:6px}
+  .shootblok__fotos .foto{aspect-ratio:3/4}
+  .shootblok__fotos .foto--l{grid-column:1/-1;order:-1;aspect-ratio:3/2}
+}
+
+/* ---------- home: keuze uit de vier shoots ---------- */
+.kies{padding-top:clamp(52px,6.6vw,100px)}
+.kies-a{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.2vw,16px)}
+.paneel{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;color:#fff;text-decoration:none;background:#111}
+.paneel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.2,.6,.2,1)}
+.paneel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,0) 40%,rgba(10,10,10,.62));transition:opacity .4s}
+.paneel::before{content:"";position:absolute;inset:10px;z-index:2;border:1px solid rgba(255,255,255,0);pointer-events:none;transition:border-color .4s}
+.paneel:hover img,.paneel:focus-visible img{transform:scale(1.04)}
+.paneel:hover::before,.paneel:focus-visible::before{border-color:rgba(255,255,255,.75)}
+.paneel:hover::after{opacity:.9}
+.paneel__tekst{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:clamp(18px,1.8vw,26px);display:grid;gap:9px}
+.paneel__nr{font:500 10.5px/1 var(--sans);letter-spacing:.3em;opacity:.8}
+.paneel__naam{font:300 clamp(22px,1.9vw,30px)/1 var(--serif);text-transform:uppercase;letter-spacing:.12em;white-space:nowrap}
+.paneel__tekst i{font:italic 300 clamp(16px,1.3vw,20px)/1.2 var(--serif)}
+.paneel__pijl{margin-top:4px;font:500 10.5px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;display:inline-flex;align-items:center;gap:12px}
+.paneel__pijl svg{width:30px;height:10px;fill:none;stroke:currentColor;stroke-width:1.2;transition:transform .4s cubic-bezier(.2,.6,.2,1)}
+.paneel:hover .paneel__pijl svg,.paneel:focus-visible .paneel__pijl svg{transform:translateX(8px)}
+.paneel:focus-visible{outline:2px solid var(--inkt);outline-offset:3px}
+@media (max-width:900px){
+  .kies-a{grid-template-columns:1fr 1fr}
+  .paneel__naam{font-size:clamp(19px,5vw,26px);letter-spacing:.1em}
+  .paneel__pijl{display:none}
+  .paneel::before{inset:7px;border-color:rgba(255,255,255,.45)}
+}
+
+/* ---------- tarieven: blokken zoals ontwerp Nacht (licht) ---------- */
+.tarief-blokken{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:clamp(56px,6vw,96px)}
+.tarief-blok{display:flex;flex-direction:column;background:#F7F6F4;border:1px solid var(--lijn)}
+.tarief-blok>img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.tb-inhoud{display:flex;flex-direction:column;flex:1;padding:34px clamp(22px,2.4vw,36px) 36px}
+.tb-inhoud h2{font:300 clamp(36px,3.2vw,48px)/1 var(--serif);text-transform:uppercase;letter-spacing:.12em;margin-bottom:24px}
+.tarief-rijen{flex:1;margin-bottom:30px;border-top:1px solid var(--inkt)}
+.tarief-rijen li{display:grid;grid-template-columns:1fr auto;gap:2px 16px;align-items:baseline;padding:15px 0;border-bottom:1px solid #DEDBD6}
+.tr-naam{font:500 12px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase}
+.tr-prijs{font:400 30px/1 var(--serif);white-space:nowrap}
+.tr-prijs.woord{font-size:23px;font-style:italic}
+.tr-info{grid-column:1/-1;font-size:14.5px;line-height:1.5;color:var(--grijs);margin-top:4px}
+.tarief-blok .knop{align-self:flex-start}
+@media (max-width:1199px){.tarief-blokken{grid-template-columns:1fr 1fr}.tarief-blokken .tarief-blok:last-child{grid-column:1/-1}.tarief-blokken .tarief-blok:last-child>img{aspect-ratio:21/9}}
+@media (max-width:767px){.tarief-blokken{grid-template-columns:1fr}.tarief-blokken .tarief-blok:last-child{grid-column:auto}.tarief-blokken .tarief-blok:last-child>img{aspect-ratio:3/2}}
+
+/* ---------- pakket kiezen / meer informatie per pakket ---------- */
+.tr-knop{grid-column:1/-1;justify-self:start;display:inline-flex;align-items:center;gap:8px;margin-top:6px;padding:4px 0;font:400 14px/1.4 var(--sans);color:var(--inkt);text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(17,17,17,.3);transition:text-decoration-color .2s}
+.tr-knop::after{content:"\2192";display:inline-block;transition:transform .25s}
+.tr-knop:hover{text-decoration-color:var(--inkt)}
+.tr-knop:hover::after{transform:translateX(3px)}
+.pakket ul{flex:1}
+.pakket__knop{margin-top:26px;align-self:flex-start}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;cursor:pointer}
+.chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.chip span{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 15px;border:1px solid #cfcfcf;background:#fff;font:500 12px/1 var(--sans);letter-spacing:.14em;transition:border-color .2s,background .2s,color .2s}
+.chip:hover span{border-color:var(--inkt)}
+.chip input:checked+span{background:var(--inkt);border-color:var(--inkt);color:#fff}
+.chip input:checked+span::before{content:"";width:9px;height:5px;border-left:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(-45deg) translateY(-2px)}
+.chip input:focus-visible+span{outline:2px solid var(--inkt);outline-offset:2px}
+
+/* ---------- reviews (licht) op home ---------- */
+.reviews-licht{border-top:1px solid var(--lijn)}
+.rslider--licht .rslider__baan>.review{border-left-color:var(--lijn)}
+.rslider--licht .rslider__pijl{border-color:rgba(17,17,17,.25)}
+.rslider--licht .rslider__pijl:hover{border-color:var(--inkt)}
+.rslider--licht .rslider__pijl svg{stroke:var(--inkt)}
+.rslider--licht .rslider__baan:focus-visible{outline-color:var(--inkt)}
+
+/* ---------- contactformulier: volgorde, optioneel, WhatsApp ---------- */
+.v-soort{order:1}.v-pakket{order:2}.v-bericht{order:3}.v-datum{order:4}.v-onbekend{order:5;margin-top:-12px}.v-locatie{order:6}
+#aanvraag.is-bruiloft .v-bericht{order:7}
+.opt{font-weight:400;letter-spacing:.06em;text-transform:none;color:var(--grijs)}
+.vink{letter-spacing:0!important;text-transform:none!important;font:400 15px/1.4 var(--sans)!important}
+.veld textarea#f-bericht{min-height:118px}
+.wa-link{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 4px;font-size:15px;color:var(--inkt);text-decoration:underline;text-underline-offset:5px;text-decoration-color:rgba(17,17,17,.3)}
+.wa-link:hover{text-decoration-color:var(--inkt)}
+.wa-link svg{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.3}
+.formkaart{scroll-margin-top:calc(var(--kop-h) + 16px)}
+.formkaart.is-gemarkeerd{animation:formgloed 1.6s ease}
+@keyframes formgloed{0%{box-shadow:0 0 0 0 rgba(17,17,17,.35)}100%{box-shadow:0 0 0 14px rgba(17,17,17,0)}}
+body.op-contact{--balk-h:0px}
+body.op-contact .onderbalk{display:none}
+@media (max-width:600px){.form-knoppen .wa-link{flex-basis:100%;justify-content:center}}
+</style>
+
+<!-- ================= HEADER (logo links, menu rechts) ================= -->
+<header class="kop" id="kop">
+  <div class="kop__binnen">
+    <a class="woordmerk" href="#home" aria-label="Denise Leuveld, naar de homepagina">Denise Leuveld</a>
+    <nav class="kop__nav" aria-label="Hoofdmenu">
+      <a class="navlink" href="#home" data-nav="home">Home</a>
+      <a class="navlink" href="#bruiloften" data-nav="bruiloften">Bruiloften</a>
+      <a class="navlink" href="#portfolio" data-nav="portfolio">Portfolio</a>
+      <div class="shoots" id="shoots">
+        <a class="navlink" href="#shoots" data-nav="shoots" aria-haspopup="true">Shoots <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+        <div class="shoots__paneel" id="shoots-paneel">
+          <div class="shoots__binnen">
+            <a class="shoots__item" href="#bruiloften" data-nav="bruiloften"><img src="fotos/k/f73.webp" width="600" height="900" alt="Bruidegom tilt de bruid op in gouden tegenlicht" loading="lazy" decoding="async"><span>Bruiloft</span></a>
+            <a class="shoots__item" href="#familie" data-nav="familie"><img src="fotos/k/f11.webp" width="600" height="900" alt="Moeder en dochters lachen samen op het zand" loading="lazy" decoding="async"><span>Familie</span></a>
+            <a class="shoots__item" href="#newborn" data-nav="newborn"><img src="fotos/k/f14.webp" width="600" height="900" alt="Ouders leggen hun baby in de wieg" loading="lazy" decoding="async"><span>Newborn</span></a>
+            <a class="shoots__item" href="#branding" data-nav="branding"><img src="fotos/k/f13.webp" width="600" height="900" alt="Ondernemer zit op de grond met een baguette" loading="lazy" decoding="async"><span>Branding</span></a>
+          </div>
+        </div>
+      </div>
+      <a class="navlink" href="#tarieven" data-nav="tarieven">Tarieven</a>
+      <a class="navlink" href="#over" data-nav="over">Over Denise</a>
+      <a class="navlink" href="#contact" data-nav="contact">Contact</a>
+      <a class="knop knop--klein kop__cta" href="#contact" data-soort="bruiloft" data-soort-pagina>Is jullie datum nog vrij?</a>
+    </nav>
+    <a class="knop knop--klein kop__cta-tablet" href="#contact" data-soort="bruiloft" data-soort-pagina>Is jullie datum nog vrij?</a>
+    <button class="menuknop" type="button" aria-expanded="false" aria-controls="mobmenu"><span class="menuknop__tekst">Menu</span><span class="menuknop__lijnen" aria-hidden="true"></span></button>
+  </div>
+</header>
+
+<div class="mobmenu" id="mobmenu" hidden>
+  <nav class="mobmenu__lijst" aria-label="Mobiel menu">
+    <a href="#home" data-nav="home">Home</a>
+    <a href="#bruiloften" data-nav="bruiloften">Bruiloften</a>
+    <a href="#portfolio" data-nav="portfolio">Portfolio</a>
+    <a href="#shoots" data-nav="shoots">Shoots</a>
+    <div class="mobmenu__sub"><a href="#bruiloften" data-nav="bruiloften">Bruiloft</a><a href="#familie" data-nav="familie">Familie</a><a href="#newborn" data-nav="newborn">Newborn</a><a href="#branding" data-nav="branding">Branding</a></div>
+    <a href="#tarieven" data-nav="tarieven">Tarieven</a>
+    <a href="#over" data-nav="over">Over Denise</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+  </nav>
+  <a class="knop" href="#contact" data-soort="bruiloft" data-soort-pagina>Is jullie datum nog vrij?</a>
+</div>
+
+<main id="inhoud">
+
+<!-- ================= HOME ================= -->
+<section class="pagina" data-pagina="home" data-titel="Denise Leuveld Fotografie · Trouwfotograaf Borne, Twente">
+  <div class="drieluik op-foto">
+    <figure class="drieluik__vak"><img src="fotos/f59.webp" width="1600" height="2400" alt="Bruidspaar kust in de zonsondergang, de sluier waait mee" decoding="async"></figure>
+    <figure class="drieluik__vak"><img src="fotos/f73.webp" width="1599" height="2400" alt="Bruidegom tilt de bruid op in gouden tegenlicht" decoding="async" fetchpriority="high"></figure>
+    <div class="drieluik__tekst">
+      <p class="bovenregel"><b>Award winnende fotografie</b><br>Bruiloft · lifestyle · branding</p>
+      <h1 class="drieluik__kop">De dag vliegt voorbij. <em>De foto's blijven voor altijd.</em></h1>
+      <p class="drieluik__sub">Award winnende trouwfotograaf uit Twente · 200+ bruiloften · bijna 10 jaar ervaring</p>
+      <div class="knoppen"><a class="knop knop--wit" href="#shoots">Bekijk fotoshoot opties</a><a class="knop knop--lijnwit" href="#portfolio">Bekijk portfolio</a></div>
+    </div>
+  </div>
+
+  <!-- keuze uit de vier shoots -->
+  <section class="sectie kies" aria-label="Fotoshoots">
+    <div class="wrap kies-a">
+      <a class="paneel" href="#bruiloften"><img src="fotos/k/f40.webp" width="600" height="900" alt="" loading="lazy" decoding="async"><span class="paneel__tekst"><span class="paneel__nr">01</span><span class="paneel__naam">Bruiloft</span><i>Let's get married!</i><span class="paneel__pijl">Bekijk<svg viewBox="0 0 30 10" aria-hidden="true"><path d="M0 5h28M24 1l4 4-4 4"/></svg></span></span></a>
+      <a class="paneel" href="#familie"><img src="fotos/k/f86.webp" width="600" height="900" alt="" loading="lazy" decoding="async"><span class="paneel__tekst"><span class="paneel__nr">02</span><span class="paneel__naam">Familie</span><i>Family is everything</i><span class="paneel__pijl">Bekijk<svg viewBox="0 0 30 10" aria-hidden="true"><path d="M0 5h28M24 1l4 4-4 4"/></svg></span></span></a>
+      <a class="paneel" href="#newborn"><img src="fotos/k/f76.webp" width="600" height="900" alt="" loading="lazy" decoding="async"><span class="paneel__tekst"><span class="paneel__nr">03</span><span class="paneel__naam">Newborn</span><i>Een kleintje op komst!</i><span class="paneel__pijl">Bekijk<svg viewBox="0 0 30 10" aria-hidden="true"><path d="M0 5h28M24 1l4 4-4 4"/></svg></span></span></a>
+      <a class="paneel" href="#branding"><img src="fotos/k/f33.webp" width="600" height="900" alt="" loading="lazy" decoding="async"><span class="paneel__tekst"><span class="paneel__nr">04</span><span class="paneel__naam">Branding</span><i>Branding &amp; business</i><span class="paneel__pijl">Bekijk<svg viewBox="0 0 30 10" aria-hidden="true"><path d="M0 5h28M24 1l4 4-4 4"/></svg></span></span></a>
+    </div>
+  </section>
+
+  <section class="sectie--krap" style="padding-top:0" aria-label="Bruiloftsfoto's">
+    <div class="wrap--breed" style="margin:0 auto">
+      <div class="muur" data-lb>
+        <div class="muur__rij">
+          <a class="foto foto--l" href="fotos/f24.webp" style="--a:1.5"><img src="fotos/k/f24.webp" width="900" height="600" alt="Bruid draait rond bij een houten hek in de ondergaande zon" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f73.webp" style="--a:.6667"><img src="fotos/k/f73.webp" width="600" height="900" alt="Bruidegom tilt de bruid op in gouden tegenlicht" loading="lazy" decoding="async"></a>
+        </div>
+        <div class="muur__rij">
+          <a class="foto" href="fotos/f55.webp" style="--a:.6667"><img src="fotos/k/f55.webp" width="600" height="900" alt="Zwart-witfoto van de bruid met wapperende jurk" loading="lazy" decoding="async"></a>
+          <a class="foto foto--l" href="fotos/f38.webp" style="--a:1.5"><img src="fotos/k/f38.webp" width="900" height="600" alt="Zwart-witfoto van het bruidspaar hand in hand in de zonnestralen" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f59.webp" style="--a:.6667"><img src="fotos/k/f59.webp" width="600" height="900" alt="Bruidspaar kust in de zonsondergang, de sluier waait mee" loading="lazy" decoding="async"></a>
+        </div>
+        <div class="muur__rij">
+          <a class="foto foto--l" href="fotos/f41.webp" style="--a:1.5"><img src="fotos/k/f41.webp" width="900" height="600" alt="Bruidspaar loopt na de ceremonie tussen klappende gasten door" loading="lazy" decoding="async"></a>
+          <a class="foto foto--l" href="fotos/f19.webp" style="--a:1.5"><img src="fotos/k/f19.webp" width="900" height="600" alt="Omhelzing bij een lange buitentafel met lichtjes" loading="lazy" decoding="async"></a>
+        </div>
+        <div class="muur__rij">
+          <a class="foto" href="fotos/f31.webp" style="--a:.6667"><img src="fotos/k/f31.webp" width="600" height="900" alt="Eerste dans van het bruidspaar tussen de gasten" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f08.webp" style="--a:.6667"><img src="fotos/k/f08.webp" width="600" height="900" alt="Zwart-witfoto van de bruid voor een sierlijke achtergrond" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f63.webp" style="--a:.6667"><img src="fotos/k/f63.webp" width="600" height="900" alt="Bruidspaar onder de bomen met een waaier" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f72.webp" style="--a:.6667"><img src="fotos/k/f72.webp" width="600" height="900" alt="Champagnetoren met regenboogkleurige rook" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f62.webp" style="--a:.6667"><img src="fotos/k/f62.webp" width="600" height="900" alt="Gedekte trouwtafel met bloemen en kaarsen" loading="lazy" decoding="async"></a>
+        </div>
+      </div>
+      <div class="midden" style="margin-top:clamp(40px,5vw,64px)"><a class="knop" href="#portfolio">Bekijk portfolio</a></div>
+    </div>
+  </section>
+
+  <section class="sectie reviews-licht" aria-label="Reviews">
+    <div class="wrap">
+      <div class="reviews__kop"><h2 class="h2">Lovely <em>reviews</em></h2></div>
+      <div class="rslider rslider--licht" data-rslider>
+        <div class="rslider__baan" id="home-reviews" tabindex="0" role="region" aria-label="Reviews, gebruik de pijltjestoetsen om te bladeren">
+          <figure class="review">
+            <blockquote class="review__q">Met tranen in de ogen onze foto's net bekeken, wat heb je iedereen mooi vastgelegd, precies zoals ze zijn, en wat veel momenten zijn er aan ons voorbij gegaan die je perfect hebt weten te vangen!</blockquote>
+            <figcaption class="review__naam">J &amp; M · bruidspaar</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote class="review__q">Een van de beste trouwfotografen van Twente in elk geval. Geplande fotoshoots, spontane shoots, het past haar allemaal. Dank Denise, we bevelen je graag aan bij onze bruidsparen want je maakt overal een feestje van!</blockquote>
+            <figcaption class="review__naam">Trouwlocatie FOX</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote class="review__q">We voelden ons meteen op ons gemak bij Denise en de fotoshoot tijdens de trouwdag waar we het meest tegenop zagen vonden we helemaal niet ongemakkelijk maar zelfs super leuk!</blockquote>
+            <figcaption class="review__naam">S &amp; A · bruidspaar</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote class="review__q">Denise is superleuk, mega spontaan, altijd vrolijk en heel professioneel. Een aanrader voor elke shoot, van bruiloft tot newborn.</blockquote>
+            <figcaption class="review__naam">Anouk</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote class="review__q">Haar natuurlijke aanpak en nauwkeurige aanwijzingen maakten het voor ons gemakkelijk voor de camera te staan. Met diverse outfits en locaties zorgde ze voor voldoende materiaal voor onze website en socials.</blockquote>
+            <figcaption class="review__naam">Filk Estates Marbella</figcaption>
+          </figure>
+        </div>
+        <div class="rslider__knoppen">
+          <button class="rslider__pijl" type="button" data-rs="-1" aria-controls="home-reviews" aria-label="Vorige review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg></button>
+          <button class="rslider__pijl" type="button" data-rs="1" aria-controls="home-reviews" aria-label="Volgende review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <section class="band op-foto" aria-label="Waar het om draait">
+    <img src="fotos/f61.webp" width="2400" height="1600" alt="Knuffel tussen de bruid en een gast op het feest" loading="lazy" decoding="async">
+    <div class="band__tekst">
+      <p class="band__citaat">De slappe lach met vrienden. Die ene blik naar elkaar net voor de ceremonie. Tranen bij een speech. Een knuffel van je oma. <em>Dáár draait het om.</em></p>
+    </div>
+  </section>
+
+  <section class="sectie">
+    <div class="wrap split split--stappen">
+      <div class="split__tekst">
+        <h2 class="h2">Zo werkt het</h2>
+        <ol class="stappenlijst">
+          <li><span class="nr">01</span><div><h3 class="stap-titel">Datum checken</h3><p>Stuur een berichtje om te checken of jullie datum nog vrij is.</p></div></li>
+          <li><span class="nr">02</span><div><h3 class="stap-titel">Kennismaken</h3><p>Een kennismakingsgesprek om elkaar te leren kennen en jullie wensen te bespreken.</p></div></li>
+          <li><span class="nr">03</span><div><h3 class="stap-titel">Offerte op maat</h3><p>In een vrijblijvend kennismakingsgesprek vertel ik jullie er alles over en maak ik graag een offerte op maat, nadat we jullie dag hebben besproken.</p></div></li>
+          <li><span class="nr">04</span><div><h3 class="stap-titel">Jullie dag</h3><p>Op de achtergrond wordt alles gezien, zonder dat het opvalt.</p></div></li>
+          <li><span class="nr">05</span><div><h3 class="stap-titel">Preview</h3><p>Grote preview van minimaal 50 beelden, enkele dagen na jullie bruiloft.</p></div></li>
+          <li><span class="nr">06</span><div><h3 class="stap-titel">Galerij en album</h3><p>Minimaal 400 professioneel bewerkte foto's in hoge resolutie, in een persoonlijke galerij die jullie eenvoudig kunnen delen met vrienden en familie. En een linnen fotoalbum van 20 × 20 cm met de allermooiste momenten.</p></div></li>
+        </ol>
+        <a class="knop" href="#bruiloften">Ga naar bruiloften</a>
+      </div>
+      <figure class="split__foto"><img src="fotos/k/f07.webp" width="600" height="900" alt="Gedekte tafel met witte bloemen en glazen" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0">
+    <div class="wrap">
+      <div class="kader">
+        <h2 class="label">Jullie droombruiloft</h2>
+        <p class="prijs-groot"><span>vanaf</span>€ 2.150</p>
+        <p class="kader__intro">Bruiloftpakketten beginnen vanaf € 2.150 en zijn inclusief:</p>
+        <ul class="inclusief">
+          <li>6 uur fotografie op jullie mooiste dag</li>
+          <li>Een kennismakingsgesprek om elkaar te leren kennen en jullie wensen te bespreken</li>
+          <li>Grote preview van minimaal 50 beelden, enkele dagen na jullie bruiloft</li>
+          <li>Minimaal 400 professioneel bewerkte foto's in hoge resolutie</li>
+          <li>Persoonlijke galerij, die jullie eenvoudig kunnen delen met vrienden en familie</li>
+          <li>Een linnen fotoalbum van 20 × 20 cm met de allermooiste momenten</li>
+        </ul>
+        <a class="knop" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectie">
+    <div class="wrap split over-kort">
+      <figure class="split__foto"><img src="fotos/k/f06.webp" width="600" height="900" alt="Denise knielt met haar camera in het bos" loading="lazy" decoding="async"></figure>
+      <div class="split__tekst">
+        <p class="label">Over Denise</p>
+        <p class="lead">Ik ben Denise, geboren en getogen in Twente. Met mijn man Matthijs en onze dochters Ella en Rosie woon ik in Borne. Het leukste van mijn werk is dat ik op veel plekken kom, veel verschillende mensen ontmoet en vaak bij momenten aanwezig mag zijn die super speciaal zijn.</p>
+        <a class="knop knop--rand" href="#over">Wil je meer over mij weten?</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0" aria-label="Andere shoots">
+    <div class="wrap kaarten">
+      <article class="kaart">
+        <a class="kaart__foto" href="#familie" tabindex="-1" aria-hidden="true"><img src="fotos/k/f86.webp" width="600" height="900" alt="" loading="lazy" decoding="async"></a>
+        <h3 class="kaart__titel">Familie</h3>
+        <p>Elk moment is een geschikt moment om jullie gezin vast te laten leggen. Op een fijne en ontspannen manier, geen stress of 'moeten'.</p>
+        <a class="knop knop--rand" href="#familie">Meer informatie</a>
+      </article>
+      <article class="kaart">
+        <a class="kaart__foto" href="#newborn" tabindex="-1" aria-hidden="true"><img src="fotos/k/f76.webp" width="600" height="900" alt="" loading="lazy" decoding="async"></a>
+        <h3 class="kaart__titel">Newborn</h3>
+        <p>Voor altijd mooie beelden van de eerste periode met jullie kleintje! Voor deze shoot kom ik graag bij jullie thuis.</p>
+        <a class="knop knop--rand" href="#newborn">Meer informatie</a>
+      </article>
+      <article class="kaart">
+        <a class="kaart__foto" href="#branding" tabindex="-1" aria-hidden="true"><img src="fotos/k/f33.webp" width="600" height="900" alt="" loading="lazy" decoding="async"></a>
+        <h3 class="kaart__titel">Branding</h3>
+        <p>Authentieke fotografie voor ondernemers. Beelden die jouw merk laten leven.</p>
+        <a class="knop knop--rand" href="#branding">Meer informatie</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="band band--cta op-foto">
+    <img src="fotos/f19.webp" width="2400" height="1599" alt="Omhelzing bij een lange buitentafel met lichtjes" loading="lazy" decoding="async" style="object-position:60% 50%">
+    <div class="band__tekst">
+      <h2 class="h2">Ben je beschikbaar op onze <em>trouwdag?</em></h2>
+      <p class="band__p">Spreken mijn foto's jullie aan en zijn jullie benieuwd naar mijn beschikbaarheid? Super leuk! Ik hoor heel graag van jullie!</p>
+      <a class="knop knop--wit" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a>
+    </div>
+  </section>
+</section>
+
+<!-- ================= SHOOTS ================= -->
+<section class="pagina" data-pagina="shoots" data-titel="Fotoshoots · Denise Leuveld Fotografie" hidden>
+  <header class="strook strook--kort op-foto">
+    <img src="fotos/f24.webp" width="2400" height="1600" alt="Bruid draait rond bij een houten hek in de ondergaande zon" decoding="async">
+    <div class="strook__tekst">
+      <p class="label">Shoots</p>
+      <h1 class="h1">Fotoshoot <em>opties</em></h1>
+    </div>
+  </header>
+
+  <section class="sectie">
+    <div class="wrap shootlijst">
+      <article class="shootblok">
+        <div class="shootblok__kop">
+          <div>
+            <p class="label">Bruiloft</p>
+            <h2 class="h2">Let's get <em>married!</em></h2>
+          </div>
+          <div>
+            <p class="lead">Groot fan van de liefde, ik leg deze fantastische dag heel graag voor jullie vast!</p>
+            <div class="knoppen"><a class="knop" href="#bruiloften">Meer informatie</a><a class="knop knop--rand" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a></div>
+          </div>
+        </div>
+        <div class="shootblok__fotos" data-lb>
+          <a class="foto" href="fotos/f63.webp"><img src="fotos/k/f63.webp" width="600" height="900" alt="Bruidspaar onder de bomen met een waaier" loading="lazy" decoding="async"></a>
+          <a class="foto foto--l" href="fotos/f41.webp"><img src="fotos/k/f41.webp" width="900" height="600" alt="Bruidspaar loopt na de ceremonie tussen klappende gasten door" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f55.webp"><img src="fotos/k/f55.webp" width="600" height="900" alt="Zwart-witfoto van de bruid met wapperende jurk" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f31.webp"><img src="fotos/k/f31.webp" width="600" height="900" alt="Eerste dans van het bruidspaar tussen de gasten" loading="lazy" decoding="async"></a>
+        </div>
+      </article>
+      <article class="shootblok">
+        <div class="shootblok__kop">
+          <div>
+            <p class="label">Familie</p>
+            <h2 class="h2">Family is <em>everything</em></h2>
+          </div>
+          <div>
+            <p class="lead">Elk moment is een geschikt moment om jullie gezin vast te laten leggen. Op een fijne en ontspannen manier, geen stress of 'moeten'.</p>
+            <div class="knoppen"><a class="knop" href="#familie">Meer informatie</a><a class="knop knop--rand" href="#contact" data-soort="familie">Is jullie datum nog vrij?</a></div>
+          </div>
+        </div>
+        <div class="shootblok__fotos" data-lb>
+          <a class="foto" href="fotos/f86.webp"><img src="fotos/k/f86.webp" width="600" height="900" alt="Moeder met drie lachende kinderen tussen het groen" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f11.webp"><img src="fotos/k/f11.webp" width="600" height="900" alt="Moeder en dochters lachen samen op het zand" loading="lazy" decoding="async"></a>
+          <a class="foto foto--l" href="fotos/f03.webp"><img src="fotos/k/f03.webp" width="900" height="600" alt="Gezin wandelt door het hoge gras" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f66.webp"><img src="fotos/k/f66.webp" width="600" height="900" alt="Moeder tilt haar kind op tussen de bomen" loading="lazy" decoding="async"></a>
+        </div>
+      </article>
+      <article class="shootblok">
+        <div class="shootblok__kop">
+          <div>
+            <p class="label">Newborn</p>
+            <h2 class="h2">Een kleintje <em>op komst!</em></h2>
+          </div>
+          <div>
+            <p class="lead">Voor altijd mooie beelden van de eerste periode met jullie kleintje! Voor deze shoot kom ik graag bij jullie thuis.</p>
+            <div class="knoppen"><a class="knop" href="#newborn">Meer informatie</a><a class="knop knop--rand" href="#contact" data-soort="newborn">Is jullie datum nog vrij?</a></div>
+          </div>
+        </div>
+        <div class="shootblok__fotos" data-lb>
+          <a class="foto foto--l" href="fotos/f57.webp"><img src="fotos/k/f57.webp" width="900" height="600" alt="Moeder knuffelt haar pasgeboren baby" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f76.webp"><img src="fotos/k/f76.webp" width="600" height="900" alt="Ouders bewonderen hun pasgeboren baby" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f14.webp"><img src="fotos/k/f14.webp" width="600" height="900" alt="Ouders leggen hun baby in de wieg" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f79.webp"><img src="fotos/k/f79.webp" width="600" height="900" alt="Moeder met baby in een lichte kamer" loading="lazy" decoding="async"></a>
+        </div>
+      </article>
+      <article class="shootblok">
+        <div class="shootblok__kop">
+          <div>
+            <p class="label">Branding</p>
+            <h2 class="h2">Branding &amp; <em>business</em></h2>
+          </div>
+          <div>
+            <p class="lead">Authentieke fotografie voor ondernemers. Beelden die jouw merk laten leven.</p>
+            <div class="knoppen"><a class="knop" href="#branding">Meer informatie</a><a class="knop knop--rand" href="#contact" data-soort="branding">Is jullie datum nog vrij?</a></div>
+          </div>
+        </div>
+        <div class="shootblok__fotos" data-lb>
+          <a class="foto" href="fotos/f33.webp"><img src="fotos/k/f33.webp" width="600" height="900" alt="Ondernemer lacht op een leren bank" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f13.webp"><img src="fotos/k/f13.webp" width="600" height="900" alt="Ondernemer zit op de grond met een baguette" loading="lazy" decoding="async"></a>
+          <a class="foto" href="fotos/f09.webp"><img src="fotos/k/f09.webp" width="600" height="900" alt="Ondernemer met haar huidverzorgingsproducten" loading="lazy" decoding="async"></a>
+          <a class="foto foto--l" href="fotos/f58.webp"><img src="fotos/k/f58.webp" width="900" height="600" alt="Drie ondernemers werken samen op laptops" loading="lazy" decoding="async"></a>
+        </div>
+      </article>
+    </div>
+  </section>
+</section>
+
+<!-- ================= BRUILOFTEN ================= -->
+<section class="pagina" data-pagina="bruiloften" data-titel="Bruiloften · Denise Leuveld Fotografie" hidden>
+  <header class="strook op-foto">
+    <img src="fotos/f24.webp" width="2400" height="1600" alt="Bruid draait rond bij een houten hek in de ondergaande zon" decoding="async" style="object-position:50% 40%">
+    <div class="strook__tekst">
+      <p class="label">Bruiloften</p>
+      <h1 class="h1">Let's get <em>married!</em></h1>
+      <div class="knoppen"><a class="knop knop--wit" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a></div>
+    </div>
+  </header>
+
+  <section class="sectie">
+    <div class="wrap intro">
+      <p class="lead">Jullie gaan trouwen! Wat een super leuke tijd gaan jullie tegemoet! De voorpret, alle ideeën die opborrelen, het plannen, dromen, keuzes maken… En straks die ene dag waarop alles samenkomt!</p>
+      <p>Je wil genieten, niet hoeven nadenken over waar je moet staan of hoe je moet kijken. Geen neppe glimlachen of gemaakte momenten, maar gewoon: jullie. Zoals het echt is.</p>
+    </div>
+  </section>
+
+  <div class="wrap--breed" style="margin:0 auto">
+    <div class="duo" data-lb>
+      <a class="foto" href="fotos/f59.webp" style="--a:.6667"><img src="fotos/k/f59.webp" width="600" height="900" alt="Bruidspaar kust in de zonsondergang, de sluier waait mee" loading="lazy" decoding="async"></a>
+      <a class="foto" href="fotos/f08.webp" style="--a:.6667"><img src="fotos/k/f08.webp" width="600" height="900" alt="Zwart-witfoto van de bruid voor een sierlijke achtergrond" loading="lazy" decoding="async"></a>
+    </div>
+  </div>
+
+  <section class="sectie">
+    <div class="wrap wrap--smal midden">
+      <p class="band__citaat" style="font-style:italic">De slappe lach met vrienden. Die ene blik naar elkaar net voor de ceremonie. Tranen bij een speech. Een knuffel van je oma. Dáár draait het om.</p>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0">
+    <div class="wrap split tekst-split">
+      <figure class="split__foto"><img src="fotos/k/f41.webp" width="900" height="600" alt="Bruidspaar loopt na de ceremonie tussen klappende gasten door" loading="lazy" decoding="async"></figure>
+      <div class="split__tekst tekst">
+        <p class="lead">En dat is precies wat wordt vastgelegd. Geen poespas, geen geposeer.</p>
+        <p>De sfeer, de connectie, het licht. Al die kleine momenten die samen jullie verhaal vertellen.</p>
+        <p>Op de achtergrond wordt alles gezien, zonder dat het opvalt. Zodat jullie de dag kunnen beleven zoals hij bedoeld is, en later telkens weer terug kunnen naar hoe het voelde.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0">
+    <div class="wrap wrap--smal midden">
+      <p>Wil je zien hoe dat eruitziet? Scroll dan door mijn portfolio, of stuur een berichtje om te checken of jullie datum nog vrij is.</p>
+      <p class="lead" style="font-style:italic;margin:14px 0 34px">Ik ben super benieuwd naar jullie plannen!</p>
+      <div class="knoppen"><a class="knop" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a><a class="knop knop--rand" href="#portfolio">Bekijk portfolio</a></div>
+    </div>
+  </section>
+
+  <section aria-label="Galerij bruiloften">
+    <div class="wrap--breed" style="margin:0 auto">
+      <div class="raster" data-lb data-galerij="bruiloft"></div>
+    </div>
+  </section>
+
+  <section class="sectie">
+    <div class="wrap">
+      <h2 class="h2">Zo werkt het</h2>
+      <ol class="stappengrid">
+        <li><span class="nr">01</span><h3 class="stap-titel">Datum checken</h3><p>Stuur een berichtje om te checken of jullie datum nog vrij is.</p></li>
+        <li><span class="nr">02</span><h3 class="stap-titel">Kennismaken</h3><p>Een kennismakingsgesprek om elkaar te leren kennen en jullie wensen te bespreken.</p></li>
+        <li><span class="nr">03</span><h3 class="stap-titel">Offerte op maat</h3><p>In een vrijblijvend kennismakingsgesprek vertel ik jullie er alles over en maak ik graag een offerte op maat, nadat we jullie dag hebben besproken.</p></li>
+        <li><span class="nr">04</span><h3 class="stap-titel">Jullie dag</h3><p>Op de achtergrond wordt alles gezien, zonder dat het opvalt.</p></li>
+        <li><span class="nr">05</span><h3 class="stap-titel">Preview</h3><p>Grote preview van minimaal 50 beelden, enkele dagen na jullie bruiloft.</p></li>
+        <li><span class="nr">06</span><h3 class="stap-titel">Galerij en album</h3><p>Minimaal 400 professioneel bewerkte foto's in hoge resolutie, in een persoonlijke galerij die jullie eenvoudig kunnen delen met vrienden en familie. En een linnen fotoalbum van 20 × 20 cm met de allermooiste momenten.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0">
+    <div class="wrap">
+      <div class="kader">
+        <h2 class="label">Jullie droombruiloft</h2>
+        <p class="prijs-groot"><span>vanaf</span>€ 2.150</p>
+        <p class="kader__intro">Bruiloftpakketten beginnen vanaf € 2.150 en zijn inclusief:</p>
+        <ul class="inclusief">
+          <li>6 uur fotografie op jullie mooiste dag</li>
+          <li>Een kennismakingsgesprek om elkaar te leren kennen en jullie wensen te bespreken</li>
+          <li>Grote preview van minimaal 50 beelden, enkele dagen na jullie bruiloft</li>
+          <li>Minimaal 400 professioneel bewerkte foto's in hoge resolutie</li>
+          <li>Persoonlijke galerij, die jullie eenvoudig kunnen delen met vrienden en familie</li>
+          <li>Een linnen fotoalbum van 20 × 20 cm met de allermooiste momenten</li>
+        </ul>
+        <p class="kader__na">Jullie dag is uit te breiden met meer uren fotografie en een groot, luxe album! In een vrijblijvend kennismakingsgesprek vertel ik jullie er alles over en maak ik graag een offerte op maat, nadat we jullie dag hebben besproken!</p>
+        <a class="knop" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0">
+    <div class="wrap">
+      <div class="reviews__kop"><h2 class="h2">Lovely <em>reviews</em></h2></div>
+    </div>
+    <div class="wrap split staand">
+      <figure class="split__foto" style="grid-column:1/6"><img src="fotos/k/f63.webp" width="600" height="900" alt="Bruidspaar onder de bomen met een waaier" loading="lazy" decoding="async"></figure>
+      <figure style="grid-column:7/13">
+        <blockquote class="citaat">Vanaf het allereerste contact hebben wij enorm genoten van de professionaliteit van Denise, maar vooral ook van haar warme persoonlijkheid! Wat een vakvrouw is Denise! Denise heeft de meest prachtige foto’s van onze dag gemaakt. We wilden geen standaard groepsfoto’s en portretten, maar juist onze dierbaren vastleggen in het moment en de emotie. Denise was er vanaf het begin van de dag bij, maar ook aan het einde van de avond toen het dak er af ging! Ze heeft prachtige foto’s gemaakt en voor ons daarmee dierbare herinneringen aan een prachtige dag!</blockquote>
+        <figcaption class="citaat-naam">Tim &amp; Jorien · bruidspaar</figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <div class="reviews reviews--licht reviews--3 reviews--rij">
+        <figure class="review">
+          <blockquote class="review__q">We zijn super blij dat we voor jou hebben gekozen als onze trouwfotograaf! De foto's zijn fantastisch en het hele contact voorafgaand en na de bruiloft was super fijn.</blockquote>
+          <figcaption class="review__naam">K &amp; M · bruidspaar</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__q">Aanrader!! Denise is een erg leuke fotograaf, heel spontaan en enthousiast. En wat hebben we genoten toen we de trouwfoto's binnenkregen, Denise, super bedankt!!</blockquote>
+          <figcaption class="review__naam">Karin S.</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__q">Wat een heerlijk spontaan lief fantastisch mooi mens ben jij. Heb je mee mogen maken op de bruiloft van Hobie en Juliette. Wat een prachtige foto's zag ik voorbij komen. En dat waren ze nog niet eens allemaal. Geweldig. Aanrader, zeker weten.</blockquote>
+          <figcaption class="review__naam">Petra · gast op een bruiloft</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--cta op-foto">
+    <img src="fotos/f25.webp" width="2400" height="1599" alt="Zwart-witfoto van de bruid tussen haar vrienden" loading="lazy" decoding="async">
+    <div class="band__tekst">
+      <h2 class="h2">Ben je beschikbaar op onze <em>trouwdag?</em></h2>
+      <div class="knoppen" style="justify-content:center;margin-top:36px"><a class="knop knop--wit" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a></div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section class="pagina" data-pagina="portfolio" data-titel="Portfolio · Denise Leuveld Fotografie" hidden>
+  <header class="strook strook--kort op-foto">
+    <img src="fotos/f38.webp" width="2400" height="1600" alt="Zwart-witfoto van het bruidspaar hand in hand in de zonnestralen" decoding="async">
+    <div class="strook__tekst">
+      <h1 class="h1" style="text-transform:uppercase;letter-spacing:.18em;margin-right:-.18em">Portfolio</h1>
+    </div>
+  </header>
+  <div class="filter">
+    <div class="filter__lijst" role="group" aria-label="Filter op soort shoot">
+      <button type="button" data-filter="alles" aria-pressed="false">Alles</button>
+      <button type="button" data-filter="bruiloft" aria-pressed="true">Bruiloften</button>
+      <button type="button" data-filter="familie" aria-pressed="false">Familie</button>
+      <button type="button" data-filter="newborn" aria-pressed="false">Newborn</button>
+      <button type="button" data-filter="branding" aria-pressed="false">Branding</button>
+    </div>
+  </div>
+  <section style="padding-top:var(--gat)" aria-label="Foto's">
+    <div class="wrap--breed" style="margin:0 auto">
+      <div class="raster" data-lb data-galerij="portfolio" aria-live="polite"></div>
+    </div>
+  </section>
+  <section class="sectie midden">
+    <div class="wrap">
+      <h2 class="h2" id="portfolio-kop">Ben je beschikbaar op onze <em>trouwdag?</em></h2>
+      <div class="knoppen" style="margin-top:34px"><a class="knop" href="#contact" data-soort="bruiloft" id="portfolio-knop">Is jullie datum nog vrij?</a></div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= FAMILIE ================= -->
+<section class="pagina" data-pagina="familie" data-titel="Familie · Denise Leuveld Fotografie" hidden>
+  <header class="strook op-foto">
+    <img src="fotos/f16.webp" width="2400" height="1599" alt="Gezin wandelt samen over het zand in de zonsondergang" decoding="async">
+    <div class="strook__tekst">
+      <p class="label">Familie</p>
+      <h1 class="h1">Family is <em>everything</em></h1>
+    </div>
+  </header>
+
+  <section class="sectie">
+    <div class="wrap intro">
+      <p class="lead">Time flies en voor je het weet ben je jaren verder. De kinderen groeien als kool, en wanneer sta je nu met z'n allen mooi op de foto?</p>
+      <p>Tijdens de familiefotoshoot wordt een ruime selectie aan foto's gemaakt in verschillende samenstellingen, zodat je later kunt kiezen wat je mooi vindt!</p>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0">
+    <div class="wrap blokken">
+      <div class="blok"><span class="nr">01</span><h3>Wat kun je verwachten vóór de shoot?</h3><p>Nadat we telefonisch of per mail een afspraak hebben gepland, gaan we samen op zoek naar een mooie locatie! Gezinsreportages kunnen ook thuis plaatsvinden. Bij meer dan 4 personen plan ik de shoot het liefst op een mooie buitenlocatie, waar we lekker de ruimte en mooi licht hebben.</p></div>
+      <div class="blok"><span class="nr">02</span><h3>Wat kun je verwachten tijdens de shoot?</h3><p>De fotoshoot duurt ongeveer 1 tot anderhalf uur. Afhankelijk van de locatie gebruiken we verschillende achtergronden voor een mooi, uitgebreid resultaat. Na het maken van een afspraak ontvang je van mij een mail met tips voor de shoot, zoals de kleding die je kunt dragen.</p></div>
+      <div class="blok"><span class="nr">03</span><h3>Wat kun je verwachten na de shoot?</h3><p>Na de fotoshoot neem ik uitgebreid de tijd om alle gemaakte foto's te selecteren en na te bewerken. De mooiste foto's zet ik in een beveiligde online galerij. In deze galerij zitten zowel kleurenfoto's als zwart-witfoto's. Via de galerij selecteer je eenvoudig welke foto's je wilt ontvangen in hoge resolutie, en uiteraard zonder logo. Het aantal gekozen foto's bepaalt dus het uiteindelijke pakket. Het voordeel hiervan is dat je kunt beslissen na het zien van de foto's, en je dus nooit hoeft te betalen voor iets wat je niet wilt!</p></div>
+    </div>
+  </section>
+
+  <section aria-label="Galerij familie">
+    <div class="wrap--breed" style="margin:0 auto">
+      <div class="raster" data-lb data-galerij="familie"></div>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="reviews__kop"><h2 class="h2">Lovely <em>reviews</em></h2></div>
+      <div class="reviews reviews--licht reviews--3">
+        <figure class="review">
+          <blockquote class="review__q">Denise is heel spontaan en straalt rust uit waardoor kinderen snel op hun gemak zijn. Dit zie je ook terug op de foto’s. Wij zijn fan en vinden haar en haar foto’s fantastisch en zullen zeker vaker een shoot bij haar inplannen!</blockquote>
+          <figcaption class="review__naam">Sanne W.</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__q">Denise is een super leuke en gezellige meid. Heeft passie voor haar vak, erg enthousiast en is uiterst professioneel. Zijn al heel vaak door haar op de gevoelige plaat vastgelegd. Willen ook geen andere fotograaf meer. Beter ga je niet vinden.</blockquote>
+          <figcaption class="review__naam">Arjan</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__q">Super leuke fotografe en mooie foto's!</blockquote>
+          <figcaption class="review__naam">Marlies</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectie">
+    <div class="wrap">
+      <div class="pakketten">
+        <article class="pakket"><h3 class="pakket__naam">Basic</h3><p class="pakket__prijs">€ 359</p><ul><li>Ca. 1,5 uur fotografie</li><li>Online galerij met minimaal 80 bewerkte foto's om uit te kiezen</li><li>12 foto's naar keuze in hoge resolutie</li><li>Extra foto € 20</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="familie" data-pakket="Basic">Meer informatie</a></article>
+        <article class="pakket"><h3 class="pakket__naam">Premium</h3><p class="pakket__prijs">€ 429</p><ul><li>Ca. 1,5 uur fotografie</li><li>Online galerij met minimaal 80 bewerkte foto's</li><li>35 foto's naar keuze in hoge resolutie</li><li>Extra foto € 7,50</li><li>Harmonica-album met 10 foto's</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="familie" data-pakket="Premium">Meer informatie</a></article>
+        <article class="pakket"><h3 class="pakket__naam">Luxe</h3><p class="pakket__prijs">€ 479</p><ul><li>Ca. 1,5 uur fotografie</li><li>Online galerij met minimaal 80 bewerkte foto's</li><li>Alle foto's in hoge resolutie</li><li>Linnen album 15 × 20 cm met 30 foto's</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="familie" data-pakket="Luxe">Meer informatie</a></article>
+        <article class="pakket"><h3 class="pakket__naam">Super de luxe</h3><p class="pakket__prijs">€ 549</p><ul><li>Ca. 1,5 uur fotografie</li><li>Online galerij met minimaal 80 bewerkte foto's</li><li>Alle foto's in hoge resolutie</li><li>Groot linnen album 20 × 30 cm met 50 foto's</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="familie" data-pakket="Super de luxe">Meer informatie</a></article>
+      </div>
+      <p class="pakket-noot">De familieshoots zijn t/m 6 personen. Prijzen zijn inclusief btw. Binnen een straal van 15 km vanaf Borne worden geen reiskosten in rekening gebracht. Daarbuiten is het € 0,50 per km.</p>
+      <div style="margin-top:36px"><a class="knop" href="#contact" data-soort="familie">Stuur een berichtje</a></div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= NEWBORN ================= -->
+<section class="pagina" data-pagina="newborn" data-titel="Newborn · Denise Leuveld Fotografie" hidden>
+  <header class="strook op-foto">
+    <img src="fotos/f57.webp" width="2400" height="1600" alt="Moeder knuffelt haar pasgeboren baby" decoding="async" style="object-position:50% 35%">
+    <div class="strook__tekst">
+      <p class="label">Newborn</p>
+      <h1 class="h1">Een kleintje <em>op komst!</em></h1>
+    </div>
+  </header>
+
+  <section class="sectie">
+    <div class="wrap intro">
+      <p class="lead">De eerste weken met jullie kindje: bijzonder, intens, vol liefde, en de tijd vliegt voorbij! Er staan tientallen foto's per dag op je telefoon, maar zelf sta je er eigenlijk nooit echt (leuk) bij op, laat staan met het hele gezin samen. En daar mag nu verandering in komen!</p>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0">
+    <div class="wrap split staand">
+      <figure class="split__foto" style="grid-column:1/6"><img src="fotos/k/f14.webp" width="600" height="900" alt="Ouders leggen hun baby in de wieg" loading="lazy" decoding="async"></figure>
+      <div class="split__tekst tekst" style="grid-column:7/13">
+        <h2 class="subkop">Wat mag je verwachten?</h2>
+        <p>Een gezellige ochtend samen waar alleen maar geknuffeld wordt, en we samen kijken naar de mooiste plekjes in jullie huis met het mooiste licht: de babykamer, jullie slaapkamer waar waarschijnlijk flink wat uurtjes samen met de baby doorgebracht worden, en ook de rest van het huis. Want jullie eigen thuis is het beste decor om deze herinneringen voor altijd vast te leggen.</p>
+        <p>De lifestyle newbornshoot wordt vaak 1 tot 8 weken na de geboorte gepland. Binnen deze weken hebben we de meeste kans op zowel slapende als wakkere foto's.</p>
+        <p>Eventuele broertjes en zusjes komen ook aan bod. Sterker nog, het liefst krijgen ze een medehoofdrol!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0">
+    <div class="wrap split staand tekst-split--om">
+      <figure class="split__foto"><img src="fotos/k/f77.webp" width="600" height="900" alt="Ouders met hun baby bij het raam" loading="lazy" decoding="async"></figure>
+      <div class="split__tekst tekst">
+        <p>Mijn stijl is niet het in mandjes leggen en in doeken wikkelen, maar dat hadden jullie vast al opgemerkt. Natuurlijke foto's, maar wel graag met oog voor detail, waar rommeltjes op de achtergrond even worden geëlimineerd en waar goed wordt gekeken naar kleur en compositie.</p>
+        <p class="lead" style="font-style:italic;margin-top:1em">Ik word zelf echt super gelukkig als ik na de shoot berichtjes krijg dat de ouders met een traantje in hun ogen de foto's hebben bekeken, en dat door mijn lens hun liefde en trots op hun scherm echt binnenknalt!</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Galerij newborn">
+    <div class="wrap--breed" style="margin:0 auto">
+      <div class="raster" data-lb data-galerij="newborn"></div>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="reviews__kop"><h2 class="h2">Lovely <em>reviews</em></h2></div>
+      <div class="reviews reviews--licht">
+        <figure class="review">
+          <blockquote class="review__q">Denise is superleuk, mega spontaan, altijd vrolijk en heel professioneel. Een aanrader voor elke shoot, van bruiloft tot newborn.</blockquote>
+          <figcaption class="review__naam">Anouk</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__q">Denise is heel spontaan en straalt rust uit waardoor kinderen snel op hun gemak zijn. Dit zie je ook terug op de foto’s.</blockquote>
+          <figcaption class="review__naam">Sanne W.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectie">
+    <div class="wrap">
+      <div class="split" style="align-items:start;margin-bottom:clamp(36px,4vw,56px)">
+        <h2 class="h2" style="grid-column:1/5">Pakketten</h2>
+        <div class="tekst grijs" style="grid-column:6/13">
+          <p>Bij alle pakketten krijg je hetzelfde aantal uren fotografie, omdat het nooit zeker is hoe jullie kindje zich die dag voelt en hoe het loopt. De meeste babyshoots duren 1,5 à 2 uur, maar ik houd rekening met een uitloop tot maximaal 3 uur.</p>
+          <p>Binnen 3 weken na de shoot ontvangen jullie van mij een mail met alle door mij gemaakte en nabewerkte beelden. Dit zijn er minimaal 70. Via de galerij selecteer je eenvoudig welke foto's je wilt ontvangen in hoge resolutie. Het aantal gekozen foto's bepaalt dus het uiteindelijke pakket.</p>
+        </div>
+      </div>
+      <div class="pakketten">
+        <article class="pakket"><h3 class="pakket__naam">Basic</h3><p class="pakket__prijs">€ 359</p><ul><li>Ca. 2 uur fotografie bij jullie thuis</li><li>Minimaal 70 bewerkte foto's om uit te kiezen</li><li>12 foto's naar keuze in hoge resolutie</li><li>Extra foto € 20</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="newborn" data-pakket="Basic">Meer informatie</a></article>
+        <article class="pakket"><h3 class="pakket__naam">Premium</h3><p class="pakket__prijs">€ 429</p><ul><li>Minimaal 70 bewerkte foto's om uit te kiezen</li><li>35 foto's naar keuze</li><li>Extra foto € 7,50</li><li>Harmonica-album met 10 foto's</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="newborn" data-pakket="Premium">Meer informatie</a></article>
+        <article class="pakket"><h3 class="pakket__naam">Luxe</h3><p class="pakket__prijs">€ 479</p><ul><li>Ca. 2 uur fotografie bij jullie thuis</li><li>Alle foto's in hoge resolutie</li><li>Linnen album 15 × 20 cm met 30 foto's</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="newborn" data-pakket="Luxe">Meer informatie</a></article>
+        <article class="pakket"><h3 class="pakket__naam">Super</h3><p class="pakket__prijs">€ 549</p><ul><li>Ca. 2 uur fotografie bij jullie thuis</li><li>Alle foto's in hoge resolutie</li><li>Groot linnen album 20 × 30 cm met 50 foto's</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="newborn" data-pakket="Super">Meer informatie</a></article>
+      </div>
+      <p class="pakket-noot">Prijzen zijn inclusief btw. Binnen een straal van 15 km vanaf Borne worden geen reiskosten in rekening gebracht. Daarbuiten is het € 0,50 per km.</p>
+      <div style="margin-top:36px"><a class="knop" href="#contact" data-soort="newborn">Stuur een berichtje</a></div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= BRANDING ================= -->
+<section class="pagina" data-pagina="branding" data-titel="Branding · Denise Leuveld Fotografie" hidden>
+  <header class="strook op-foto">
+    <img src="fotos/f58.webp" width="2400" height="1599" alt="Drie ondernemers werken samen op laptops" decoding="async">
+    <div class="strook__tekst">
+      <p class="label">Branding</p>
+      <h1 class="h1">Branding &amp; <em>business</em></h1>
+    </div>
+  </header>
+
+  <section class="sectie">
+    <div class="wrap split staand tekst-split--om">
+      <figure class="split__foto"><img src="fotos/k/f54.webp" width="599" height="900" alt="Ondernemer met een boek in haar hand" loading="lazy" decoding="async"></figure>
+      <div class="split__tekst tekst">
+        <p class="lead">Als fotograaf weet ik als geen ander hoe belangrijk sprekende beelden zijn om impact te maken. Dat klanten in één oogopslag zien WIE je bent, wat je doet en waarom ze bij jou moeten zijn.</p>
+        <p style="margin-top:1.4em">Het complete plaatje van een sfeerbepalende locatie, kleding en kleurgebruik maakt de look-and-feel van de foto's, en dus je (online) visitekaartje. Bij de brandingshoot maken we een beeldbank van foto's waar je nog lange tijd gebruik van kunt maken en uit kunt kiezen.</p>
+        <p>Tijdens een (video)call leren we elkaar kennen en bespreken we jouw visie als persoon en je bedrijf. Ik hoor graag wie je bent en wat je wilt uitstralen, en samen bespreken we hoe we dat gaan aanpakken!</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Galerij branding">
+    <div class="wrap--breed" style="margin:0 auto">
+      <div class="raster" data-lb data-galerij="branding"></div>
+    </div>
+  </section>
+
+  <section class="sectie">
+    <div class="wrap">
+      <div class="pakketten">
+        <article class="pakket"><h3 class="pakket__naam">Basis</h3><p class="pakket__prijs">€ 349</p><ul><li>1 uur fotografie</li><li>Professionele nabewerking van alle geselecteerde foto's</li><li>Online galerij om uit te kiezen</li><li>30 zelfgekozen beelden in hoge resolutie</li><li>Meer foto's bestellen? Dat kan!</li><li>Locatie naar keuze binnen 100 km vanaf Borne</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="branding" data-pakket="Basis">Meer informatie</a></article>
+        <article class="pakket"><h3 class="pakket__naam">Uitgebreid</h3><p class="pakket__prijs">€ 499</p><ul><li>2 uur fotografie</li><li>Professionele nabewerking</li><li>Online galerij</li><li>60 zelfgekozen beelden in hoge resolutie</li><li>Meer foto's bestellen? Dat kan!</li><li>Locatie binnen 150 km</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="branding" data-pakket="Uitgebreid">Meer informatie</a></article>
+        <article class="pakket"><h3 class="pakket__naam">Premium</h3><p class="pakket__prijs">€ 695</p><ul><li>4 uur fotografie</li><li>Professionele nabewerking</li><li>Alle beelden in hoge resolutie</li><li>Locatie binnen 200 km</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="branding" data-pakket="Premium">Meer informatie</a></article>
+        <article class="pakket"><h3 class="pakket__naam">VIP</h3><p class="pakket__prijs pakket__prijs--tekst">op aanvraag</p><ul><li>Vanaf 5 uur fotografie</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="branding" data-pakket="VIP">Meer informatie</a></article>
+      </div>
+      <div style="margin-top:36px"><a class="knop" href="#contact" data-soort="branding">Stuur een berichtje</a></div>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0">
+    <div class="wrap">
+      <div class="reviews__kop"><h2 class="h2">Lovely <em>reviews</em></h2></div>
+      <div class="reviews reviews--licht">
+        <figure class="review">
+          <blockquote class="review__q">Denise Leuveld heeft een uitstekende fotoshoot voor ons makelaarskantoor in Marbella verzorgd. Haar natuurlijke aanpak en nauwkeurige aanwijzingen maakten het voor ons gemakkelijk voor de camera te staan. Met diverse outfits en locaties zorgde ze voor voldoende materiaal voor onze website en socials. De foto's zijn van geweldige kwaliteit, en we ontvangen veel positieve reacties. We bevelen Denise zeker aan voor een professionele en plezierige fotosessie!</blockquote>
+          <figcaption class="review__naam">Filk Estates Marbella</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__q">Wow, ik ben ontzettend blij met de foto's die Denise van mij heeft gemaakt! Het is zo leuk om een brandingshoot te doen, en met Denise is het echt een feest. Ze geeft precies aan wat je moet doen en welke hoeken het mooist uitkomen, echt mega professioneel. Het resultaat is schitterend; ik ben er zo blij mee en heb nu toegang tot een heleboel foto's die ik zakelijk kan gebruiken. Het is het echt waard!</blockquote>
+          <figcaption class="review__naam">Meike · brandingshoot</figcaption>
+        </figure>
+      </div>
+      <div class="midden" style="margin-top:clamp(48px,5vw,72px)"><a class="knop" href="#contact" data-soort="branding">Stuur een berichtje</a></div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= TARIEVEN ================= -->
+<section class="pagina" data-pagina="tarieven" data-titel="Tarieven · Denise Leuveld Fotografie" hidden>
+  <header class="strook op-foto">
+    <img src="fotos/f83.webp" width="2400" height="1600" alt="Bruid stapt in haar trouwjurk in een donkere kamer" decoding="async">
+    <div class="strook__tekst">
+      <h1 class="h1" style="text-transform:uppercase;letter-spacing:.18em;margin-right:-.18em">Tarieven</h1>
+    </div>
+  </header>
+
+  <section class="sectie">
+    <div class="wrap">
+      <article class="tarief-bruiloft">
+        <figure class="tarief-bruiloft__foto"><img src="fotos/k/f31.webp" width="600" height="900" alt="Eerste dans van het bruidspaar tussen de gasten" loading="lazy" decoding="async"></figure>
+        <div class="tarief-bruiloft__tekst">
+          <p class="label">Jullie droombruiloft</p>
+          <h2 class="prijs-groot"><span>vanaf</span>€ 2.150</h2>
+          <p class="kader__intro" style="margin:0">Bruiloftpakketten beginnen vanaf € 2.150 en zijn inclusief:</p>
+          <ul class="inclusief">
+            <li>6 uur fotografie op jullie mooiste dag</li>
+            <li>Een kennismakingsgesprek om elkaar te leren kennen en jullie wensen te bespreken</li>
+            <li>Grote preview van minimaal 50 beelden, enkele dagen na jullie bruiloft</li>
+            <li>Minimaal 400 professioneel bewerkte foto's in hoge resolutie</li>
+            <li>Persoonlijke galerij, die jullie eenvoudig kunnen delen met vrienden en familie</li>
+            <li>Een linnen fotoalbum van 20 × 20 cm met de allermooiste momenten</li>
+          </ul>
+          <a class="knop" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a>
+        </div>
+      </article>
+
+      <div class="tarief-blokken">
+        <article class="tarief-blok">
+          <img src="fotos/k/f16.webp" width="900" height="600" alt="Gezin wandelt over het zand in warm tegenlicht tussen de dennen" loading="lazy" decoding="async">
+          <div class="tb-inhoud">
+            <h2>Familie</h2>
+            <ul class="tarief-rijen">
+              <li><span class="tr-naam">Basic</span><span class="tr-prijs">€ 359</span><span class="tr-info">12 foto's naar keuze in hoge resolutie · extra foto € 20</span><a class="tr-knop" href="#contact" data-soort="familie" data-pakket="Basic">Meer informatie</a></li>
+              <li><span class="tr-naam">Premium</span><span class="tr-prijs">€ 429</span><span class="tr-info">35 foto's naar keuze in hoge resolutie · harmonica-album met 10 foto's</span><a class="tr-knop" href="#contact" data-soort="familie" data-pakket="Premium">Meer informatie</a></li>
+              <li><span class="tr-naam">Luxe</span><span class="tr-prijs">€ 479</span><span class="tr-info">Alle foto's in hoge resolutie · linnen album 15 × 20 cm met 30 foto's</span><a class="tr-knop" href="#contact" data-soort="familie" data-pakket="Luxe">Meer informatie</a></li>
+              <li><span class="tr-naam">Super de luxe</span><span class="tr-prijs">€ 549</span><span class="tr-info">Alle foto's in hoge resolutie · groot linnen album 20 × 30 cm met 50 foto's</span><a class="tr-knop" href="#contact" data-soort="familie" data-pakket="Super de luxe">Meer informatie</a></li>
+            </ul>
+            <a class="knop knop--rand" href="#familie">Over de familieshoot</a>
+          </div>
+        </article>
+        <article class="tarief-blok">
+          <img src="fotos/k/f57.webp" width="900" height="600" alt="Moeder houdt haar baby lachend tegen zich aan" loading="lazy" decoding="async">
+          <div class="tb-inhoud">
+            <h2>Newborn</h2>
+            <ul class="tarief-rijen">
+              <li><span class="tr-naam">Basic</span><span class="tr-prijs">€ 359</span><span class="tr-info">12 foto's naar keuze in hoge resolutie · extra foto € 20</span><a class="tr-knop" href="#contact" data-soort="newborn" data-pakket="Basic">Meer informatie</a></li>
+              <li><span class="tr-naam">Premium</span><span class="tr-prijs">€ 429</span><span class="tr-info">35 foto's naar keuze · harmonica-album met 10 foto's</span><a class="tr-knop" href="#contact" data-soort="newborn" data-pakket="Premium">Meer informatie</a></li>
+              <li><span class="tr-naam">Luxe</span><span class="tr-prijs">€ 479</span><span class="tr-info">Alle foto's in hoge resolutie · linnen album 15 × 20 cm met 30 foto's</span><a class="tr-knop" href="#contact" data-soort="newborn" data-pakket="Luxe">Meer informatie</a></li>
+              <li><span class="tr-naam">Super</span><span class="tr-prijs">€ 549</span><span class="tr-info">Alle foto's in hoge resolutie · groot linnen album 20 × 30 cm met 50 foto's</span><a class="tr-knop" href="#contact" data-soort="newborn" data-pakket="Super">Meer informatie</a></li>
+            </ul>
+            <a class="knop knop--rand" href="#newborn">Over de newbornshoot</a>
+          </div>
+        </article>
+        <article class="tarief-blok">
+          <img src="fotos/k/f45.webp" width="900" height="600" alt="Vier ondernemers overleggen lachend aan tafel met een laptop" loading="lazy" decoding="async">
+          <div class="tb-inhoud">
+            <h2>Branding</h2>
+            <ul class="tarief-rijen">
+              <li><span class="tr-naam">Basis</span><span class="tr-prijs">€ 349</span><span class="tr-info">1 uur fotografie · 30 zelfgekozen beelden in hoge resolutie</span><a class="tr-knop" href="#contact" data-soort="branding" data-pakket="Basis">Meer informatie</a></li>
+              <li><span class="tr-naam">Uitgebreid</span><span class="tr-prijs">€ 499</span><span class="tr-info">2 uur fotografie · 60 zelfgekozen beelden in hoge resolutie</span><a class="tr-knop" href="#contact" data-soort="branding" data-pakket="Uitgebreid">Meer informatie</a></li>
+              <li><span class="tr-naam">Premium</span><span class="tr-prijs">€ 695</span><span class="tr-info">4 uur fotografie · alle beelden in hoge resolutie</span><a class="tr-knop" href="#contact" data-soort="branding" data-pakket="Premium">Meer informatie</a></li>
+              <li><span class="tr-naam">VIP</span><span class="tr-prijs woord">op aanvraag</span><span class="tr-info">Vanaf 5 uur fotografie</span><a class="tr-knop" href="#contact" data-soort="branding" data-pakket="VIP">Meer informatie</a></li>
+            </ul>
+            <a class="knop knop--rand" href="#branding">Over de brandingshoot</a>
+          </div>
+        </article>
+      </div>
+      <p class="pakket-noot" style="text-align:center;max-width:none">Prijzen zijn inclusief btw.</p>
+
+      <div class="tarief-reviews">
+        <div class="reviews__kop"><h2 class="h2">Lovely <em>reviews</em></h2></div>
+        <div class="reviews reviews--licht reviews--3">
+          <figure class="review">
+            <blockquote class="review__q">We zijn super blij dat we voor jou hebben gekozen als onze trouwfotograaf! De foto's zijn fantastisch en het hele contact voorafgaand en na de bruiloft was super fijn.</blockquote>
+            <figcaption class="review__naam">K &amp; M · bruidspaar</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote class="review__q">Zijn al heel vaak door haar op de gevoelige plaat vastgelegd. Willen ook geen andere fotograaf meer.</blockquote>
+            <figcaption class="review__naam">Arjan</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote class="review__q">Het resultaat is schitterend; ik ben er zo blij mee en heb nu toegang tot een heleboel foto's die ik zakelijk kan gebruiken. Het is het echt waard!</blockquote>
+            <figcaption class="review__naam">Meike · brandingshoot</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= OVER ================= -->
+<section class="pagina" data-pagina="over" data-titel="Over Denise · Denise Leuveld Fotografie" hidden>
+  <header class="strook op-foto">
+    <img src="fotos/f01.webp" width="2400" height="1600" alt="Denise fotografeert bij een groot raam" decoding="async" style="object-position:40% 45%">
+    <div class="strook__tekst">
+      <p class="label">Over Denise</p>
+      <h1 class="h1 h1--lang">Welkom op mijn site, wat leuk dat je een <em>kijkje neemt!</em></h1>
+    </div>
+  </header>
+
+  <section class="sectie">
+    <div class="wrap over-grid">
+      <figure class="over-foto over-grid__f1"><img src="fotos/k/f06.webp" width="600" height="900" alt="Denise knielt met haar camera in het bos" loading="lazy" decoding="async"></figure>
+      <div class="over-grid__t1 tekst">
+        <p class="lead">Ik ben Denise, geboren en getogen in Twente. Samen met mijn man Matthijs en onze dochters Ella en Rosie woon ik in Borne, Overijssel.</p>
+        <p style="margin-top:1.4em">Mijn passie en werk is fotografie. Ik doe dit al heel wat jaren fulltime, en met heel veel plezier en enthousiasme!</p>
+        <p>Het leukste van mijn werk is dat ik op veel plekken kom, veel verschillende mensen ontmoet en vaak bij momenten aanwezig mag zijn die super speciaal zijn.</p>
+      </div>
+      <div class="over-grid__t2 tekst">
+        <p>Met mijn interesse in mensen en kunst is fotografie mijn ultieme droombaan! Ik begon met het maken van foto's van familieleden en vrienden, en ontwikkelde zo langzaam de stijl die je nu bij me kunt vinden. Inmiddels alweer bijna 10 fotografiejaren, vele super toffe shoots met lieve klanten en +200 bruiloften verder, kan ik wel zeggen dat ik dit het allerleukste en meest bijzondere werk vind dat er bestaat! Elke dag met een mega smile op pad, en vol mooie en persoonlijke verhalen weer thuiskomen!</p>
+        <p class="lead" style="font-style:italic;margin-top:1em">Kijk rustig rond en als je vragen hebt, dan beantwoord ik ze heel graag!</p>
+        <div class="knoppen" style="margin-top:34px"><a class="knop" href="#portfolio">Bekijk portfolio</a><a class="knop knop--rand" href="#contact" data-soort="bruiloft">Stuur een berichtje</a></div>
+      </div>
+      <figure class="over-foto over-grid__f2"><img src="fotos/k/f02.webp" width="654" height="900" alt="Denise lacht met haar camera in de hand" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <div class="awards-band" style="border-top:1px solid var(--lijn)">
+    <div class="wrap">
+      <ul class="awards" aria-label="Awards">
+        <li class="zegel"><span class="zegel__bron">Wedisson</span><span class="zegel__titel">Award</span><span class="zegel__jaar">Winnaar</span></li>
+        <li class="zegel zegel--breed"><span class="zegel__bron">Trouwlocatie FOX</span><span class="zegel__titel">“Een van de beste trouwfotografen van Twente”</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="pagina" data-pagina="contact" data-titel="Contact · Denise Leuveld Fotografie" hidden>
+  <header class="strook op-foto" style="height:clamp(280px,42vh,440px)">
+    <img src="fotos/f20.webp" width="2400" height="1600" alt="Innige knuffel tussen gasten met witte ballonnen" decoding="async">
+    <div class="strook__tekst">
+      <p class="label">Contact</p>
+      <h1 class="h1 h1--lang" id="contact-kop">Ben je beschikbaar op onze <em>trouwdag?</em></h1>
+    </div>
+  </header>
+
+  <section class="sectie">
+    <div class="wrap contact">
+      <div class="contact__intro">
+        <p class="lead">Spreken mijn foto's jullie aan en zijn jullie benieuwd naar mijn beschikbaarheid? Of zouden jullie het leuk vinden om vrijblijvend een afspraak te maken om kennis te maken? Super leuk! Ik hoor heel graag van jullie!</p>
+        <p class="liefs">Liefs, Denise</p>
+      </div>
+
+      <div class="contact__form">
+        <div class="formkaart">
+          <form id="aanvraag" novalidate>
+            <div class="stapper" aria-hidden="true"><span class="stapper__tekst" id="stap-tekst">1 van 2</span><span class="stapper__balk"><span class="aan"></span><span id="stap-balk-2"></span></span></div>
+            <p class="vh" id="stap-status" aria-live="polite">Stap 1 van 2</p>
+
+            <fieldset data-stap="1">
+              <legend class="vh">Stap 1 van 2</legend>
+              <div class="velden">
+                <div class="veld veld--vol v-soort">
+                  <label for="f-soort">Waarvoor?</label>
+                  <select id="f-soort" name="soort"><option value="bruiloft">Bruiloft</option><option value="familie">Familieshoot</option><option value="newborn">Newbornshoot</option><option value="branding">Brandingshoot</option></select>
+                </div>
+                <div class="veld veld--vol v-pakket" id="v-pakket" hidden>
+                  <span class="veldlabel" id="l-pakket">Pakket</span>
+                  <div class="chips" id="f-pakket" role="radiogroup" aria-labelledby="l-pakket"></div>
+                </div>
+                <div class="veld veld--vol v-bericht">
+                  <label for="f-bericht" id="l-bericht">Jullie vraag of bericht</label>
+                  <textarea id="f-bericht" name="bericht" rows="4"></textarea>
+                </div>
+                <div class="veld veld--vol v-datum">
+                  <label for="f-datum" id="l-datum">Trouwdatum</label>
+                  <input type="date" id="f-datum" name="datum" aria-describedby="f-datum-fout" aria-required="true">
+                  <p class="fout" id="f-datum-fout"></p>
+                </div>
+                <div class="veld veld--vol v-onbekend" id="v-onbekend">
+                  <label class="vink" for="f-onbekend"><input type="checkbox" id="f-onbekend" name="datum_onbekend"> We weten de datum nog niet precies</label>
+                </div>
+                <div class="veld veld--vol v-locatie">
+                  <label for="f-locatie" id="l-locatie">Trouwlocatie of plaats</label>
+                  <input type="text" id="f-locatie" name="locatie" autocomplete="off">
+                </div>
+              </div>
+              <div class="form-knoppen"><button type="button" class="knop" id="f-volgende">Volgende stap</button><a class="wa-link" href="https://wa.me/31634447470" target="_blank" rel="noopener" data-wa><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8.5 8.5 0 1 1 8.2 19z"/></svg>Of stuur je vraag via WhatsApp</a></div>
+            </fieldset>
+
+            <fieldset data-stap="2" hidden>
+              <legend class="vh">Stap 2 van 2</legend>
+              <div class="velden">
+                <div class="veld veld--vol"><label for="f-naam">Naam</label><input type="text" id="f-naam" name="naam" autocomplete="name" aria-describedby="f-naam-fout" aria-required="true"><p class="fout" id="f-naam-fout"></p></div>
+                <div class="veld"><label for="f-email">E-mail</label><input type="email" id="f-email" name="email" autocomplete="email" inputmode="email" aria-describedby="f-email-fout" aria-required="true"><p class="fout" id="f-email-fout"></p></div>
+                <div class="veld"><label for="f-telefoon">Telefoonnummer <span class="opt">(optioneel)</span></label><input type="tel" id="f-telefoon" name="telefoon" autocomplete="tel" inputmode="tel"></div>
+                <div class="veld" data-alleen-bruiloft><label for="f-gasten">Aantal gasten <span class="opt">(optioneel)</span></label><select id="f-gasten" name="gasten"><option value="">—</option><option>tot 50</option><option>50–100</option><option>100–150</option><option>meer dan 150</option></select></div>
+                <div class="veld" data-alleen-bruiloft><label for="f-uren">Hoeveel uur fotografie <span class="opt">(optioneel)</span></label><select id="f-uren" name="uren"><option value="">—</option><option>6 uur</option><option>8 uur</option><option>10 uur of meer</option><option>weet ik nog niet</option></select></div>
+                <div class="veld veld--vol"><label for="f-bron">Hoe ken je mij? <span class="opt">(optioneel)</span></label><select id="f-bron" name="bron"><option value="">—</option><option>Instagram</option><option>Google</option><option>via de trouwlocatie</option><option>via vrienden of familie</option><option>anders</option></select></div>
+              </div>
+              <div class="form-knoppen"><button type="button" class="knop knop--rand" id="f-terug">Terug</button><button type="submit" class="knop" id="f-verzenden">Verstuur je vraag</button><a class="wa-link" href="https://wa.me/31634447470" target="_blank" rel="noopener" data-wa><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8.5 8.5 0 1 1 8.2 19z"/></svg>Of via WhatsApp</a></div>
+            </fieldset>
+          </form>
+          <div class="bedankt" id="bedankt" tabindex="-1" hidden>
+            <p>Super leuk! Ik hoor heel graag van jullie!</p>
+            <p class="liefs">Liefs, Denise</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__touch">
+        <h2 class="subkop">Get in touch</h2>
+        <p class="grijs">Heb je een vraag of wil je een afspraak maken? Vul het formulier in en dan neem ik zo snel mogelijk contact met je op!</p>
+        <ul class="gegevens">
+          <li><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Borne, Twente</span></li>
+          <li><a href="mailto:deniseleuveld@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13"/><path d="M3.5 6l8.5 7 8.5-7"/></svg>deniseleuveld@gmail.com</a></li>
+          <li><a href="tel:+31634447470"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4.5-2 1.5a11 11 0 0 0 5.5 5.5l1.5-2 4.5 1.5v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg>06 34 44 74 70</a></li>
+          <li><a href="https://wa.me/31634447470" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8.5 8.5 0 1 1 8.2 19z"/></svg>WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/deniseleuveldfotografie/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg>@deniseleuveldfotografie</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0">
+    <div class="wrap">
+      <div class="reviews__kop"><h2 class="h2">Lovely <em>reviews</em></h2></div>
+      <div class="reviews reviews--licht" data-reviews-soort="bruiloft">
+        <figure class="review">
+          <blockquote class="review__q">Denise heeft de meest prachtige foto’s van onze dag gemaakt. We wilden geen standaard groepsfoto’s en portretten, maar juist onze dierbaren vastleggen in het moment en de emotie.</blockquote>
+          <figcaption class="review__naam">Tim &amp; Jorien · bruidspaar</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__q">Een van de beste trouwfotografen van Twente in elk geval.</blockquote>
+          <figcaption class="review__naam">Trouwlocatie FOX</figcaption>
+        </figure>
+      </div>
+      <div class="reviews reviews--licht" data-reviews-soort="familie" hidden>
+        <figure class="review">
+          <blockquote class="review__q">Denise is heel spontaan en straalt rust uit waardoor kinderen snel op hun gemak zijn. Dit zie je ook terug op de foto’s.</blockquote>
+          <figcaption class="review__naam">Sanne W.</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__q">Zijn al heel vaak door haar op de gevoelige plaat vastgelegd. Willen ook geen andere fotograaf meer.</blockquote>
+          <figcaption class="review__naam">Arjan</figcaption>
+        </figure>
+      </div>
+      <div class="reviews reviews--licht" data-reviews-soort="newborn" hidden>
+        <figure class="review">
+          <blockquote class="review__q">Denise is superleuk, mega spontaan, altijd vrolijk en heel professioneel. Een aanrader voor elke shoot, van bruiloft tot newborn.</blockquote>
+          <figcaption class="review__naam">Anouk</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__q">Super leuke fotografe en mooie foto's!</blockquote>
+          <figcaption class="review__naam">Marlies</figcaption>
+        </figure>
+      </div>
+      <div class="reviews reviews--licht" data-reviews-soort="branding" hidden>
+        <figure class="review">
+          <blockquote class="review__q">Het resultaat is schitterend; ik ben er zo blij mee en heb nu toegang tot een heleboel foto's die ik zakelijk kan gebruiken. Het is het echt waard!</blockquote>
+          <figcaption class="review__naam">Meike · brandingshoot</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__q">Haar natuurlijke aanpak en nauwkeurige aanwijzingen maakten het voor ons gemakkelijk voor de camera te staan. Met diverse outfits en locaties zorgde ze voor voldoende materiaal voor onze website en socials.</blockquote>
+          <figcaption class="review__naam">Filk Estates Marbella</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="voet">
+  <div class="wrap">
+    <div class="voet__top">
+      <a class="woordmerk" href="#home">Denise Leuveld</a>
+      <p class="voet__quote">The best thing about memories is making them.</p>
+    </div>
+    <div class="voet__grid">
+      <nav class="voet__menu" aria-label="Footermenu">
+        <a href="#bruiloften">Bruiloften</a><a href="#familie">Familie</a>
+        <a href="#portfolio">Portfolio</a><a href="#newborn">Newborn</a>
+        <a href="#tarieven">Tarieven</a><a href="#branding">Branding</a>
+        <a href="#over">Over Denise</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="voet__contact">
+        <span>Borne, Twente</span>
+        <a href="mailto:deniseleuveld@gmail.com">deniseleuveld@gmail.com</a>
+        <a href="tel:+31634447470">06 34 44 74 70</a>
+        <a href="https://wa.me/31634447470" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/deniseleuveldfotografie/" target="_blank" rel="noopener">Instagram @deniseleuveldfotografie</a>
+      </div>
+      <ul class="awards" aria-label="Awards">
+        <li class="zegel"><span class="zegel__bron">Wedisson</span><span class="zegel__titel">Award</span><span class="zegel__jaar">Winnaar</span></li>
+        <li class="zegel zegel--breed"><span class="zegel__bron">Trouwlocatie FOX</span><span class="zegel__titel">“Een van de beste trouwfotografen van Twente”</span></li>
+      </ul>
+    </div>
+    <div class="voet__onder"><span>© 2026 Denise Leuveld Fotografie</span><a href="#contact" data-soort="bruiloft" data-soort-pagina>Is jullie datum nog vrij?</a></div>
+  </div>
+</footer>
+
+<div class="onderbalk" aria-label="Snel contact">
+  <a class="knop" href="#contact" data-soort="bruiloft" data-soort-pagina>Datum checken</a>
+  <a class="knop knop--rand" href="https://wa.me/31634447470" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Fotoviewer" hidden>
+  <div class="lb__balk">
+    <span class="lb__teller" id="lb-teller" aria-live="polite">1 / 1</span>
+    <button class="lb__sluit" type="button" id="lb-sluit" aria-label="Sluiten"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  </div>
+  <figure class="lb__fig"><img id="lb-img" src="" alt=""></figure>
+  <button class="lb__pijl lb__pijl--vorige" type="button" id="lb-vorige" aria-label="Vorige foto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg></button>
+  <button class="lb__pijl lb__pijl--volgende" type="button" id="lb-volgende" aria-label="Volgende foto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg></button>
+</div>
+
+<script>
+(function(){
+  /* ---------- fotodata ---------- */
+  var FOTOS = {
+    bruiloft: [
+      ['f73','S','Bruidegom tilt de bruid op in gouden tegenlicht'],
+      ['f24','L','Bruid draait rond bij een houten hek in de ondergaande zon'],
+      ['f55','S','Zwart-witfoto van de bruid met wapperende jurk'],
+      ['f59','S','Bruidspaar kust in de zonsondergang, de sluier waait mee'],
+      ['f38','L','Zwart-witfoto van het bruidspaar hand in hand in de zonnestralen'],
+      ['f41','L','Bruidspaar loopt na de ceremonie tussen klappende gasten door'],
+      ['f40','S','Bruid met lange sluier loopt een landhuis binnen'],
+      ['f31','S','Eerste dans van het bruidspaar tussen de gasten'],
+      ['f08','S','Zwart-witfoto van de bruid voor een sierlijke achtergrond'],
+      ['f19','L','Omhelzing bij een lange buitentafel met lichtjes'],
+      ['f63','S','Bruidspaar onder de bomen met een waaier'],
+      ['f20','L','Innige knuffel tussen gasten met witte ballonnen'],
+      ['f72','S','Champagnetoren met regenboogkleurige rook'],
+      ['f62','S','Gedekte trouwtafel met bloemen en kaarsen'],
+      ['f25','L','Zwart-witfoto van de bruid tussen haar vrienden'],
+      ['f07','S','Gedekte tafel met witte bloemen en glazen'],
+      ['f37','S','Handen sluiten de knoopjes van een kanten mouw'],
+      ['f61','L','Knuffel tussen de bruid en een gast op het feest'],
+      ['f70','S','Bruid in ochtendjas, close-up van haar handen'],
+      ['f75','S','Bruid in de ochtend bij het raam'],
+      ['f64','S','Bruidsschoenen in de vensterbank'],
+      ['f83','L','Bruid stapt in haar trouwjurk in een donkere kamer'],
+      ['f21','S','Boekje met de tekst her vows'],
+      ['f56','S','Zwart-witfoto van de bruid in het tegenlicht']
+    ],
+    familie: [
+      ['f16','L','Gezin wandelt samen over het zand in de zonsondergang'],
+      ['f11','S','Moeder en dochters lachen samen op het zand'],
+      ['f86','S','Moeder met drie lachende kinderen tussen het groen'],
+      ['f66','S','Moeder tilt haar kind op tussen de bomen'],
+      ['f03','L','Gezin wandelt door het hoge gras'],
+      ['f71','S','Gezin tussen de dennenbomen in het zonlicht'],
+      ['f48','S','Moeder en kind bij een boomstam in tegenlicht'],
+      ['f32','S','Moeder zwaait haar zoontje rond op het zand'],
+      ['f30','L','Gezin speelt samen in het zand bij laag zonlicht'],
+      ['f51','S','Zwart-witfoto van een moeder die haar zoon knuffelt'],
+      ['f53','S','Gezin zit samen in het bos'],
+      ['f43','L','Ouders en kinderen lopen over de zandvlakte'],
+      ['f80','S','Vader tilt zijn kind op in het hoge gras'],
+      ['f46','S','Zwart-witfoto van een innige omhelzing'],
+      ['f84','L','Gezin op het zand in de avondzon']
+    ],
+    newborn: [
+      ['f57','L','Moeder knuffelt haar pasgeboren baby'],
+      ['f14','S','Ouders leggen hun baby in de wieg'],
+      ['f76','S','Ouders bewonderen hun pasgeboren baby'],
+      ['f77','S','Ouders met hun baby bij het raam'],
+      ['f49','L','Zwart-witfoto van een moeder met baby in bed'],
+      ['f79','S','Moeder met baby in een lichte kamer'],
+      ['f04','S','Pasgeboren baby slaapt op een wollen deken'],
+      ['f05','S','Moeder met baby op bed'],
+      ['f81','L','Ouders met hun baby in de babykamer']
+    ],
+    branding: [
+      ['f45','L','Team overlegt samen aan tafel'],
+      ['f13','S','Ondernemer zit op de grond met een baguette'],
+      ['f33','S','Ondernemer lacht op een leren bank'],
+      ['f09','S','Ondernemer met haar huidverzorgingsproducten'],
+      ['f58','L','Drie ondernemers werken samen op laptops'],
+      ['f10','S','Portret van een ondernemer op een bank'],
+      ['f54','S','Ondernemer met een boek in haar hand'],
+      ['f12','S','Ondernemer toont een product in de camera'],
+      ['f27','L','Twee vrouwen bekijken een boek aan tafel'],
+      ['f44','S','Stilleven met notitieboek en discobal'],
+      ['f78','S','Ondernemer houdt haar boek vast'],
+      ['f85','S','Ondernemer met een discobal'],
+      ['f39','L','Schoonheidsspecialist aan het werk met een klant'],
+      ['f26','S','Schoonheidsspecialist behandelt een klant'],
+      ['f42','S','Schoonheidsspecialist tijdens een behandeling'],
+      ['f22','S','Twee vrouwen in gesprek aan een ronde tafel'],
+      ['f17','L','Stilleven met koffie en zonlicht'],
+      ['f35','S','Twee vrouwen werken samen aan tafel'],
+      ['f50','S','Twee vrouwen in een lichte werkruimte'],
+      ['f68','S','Ondernemer schikt een vaas met droogbloemen'],
+      ['f74','L','Teamfoto in een lichte ruimte'],
+      ['f82','S','Ondernemer bekijkt een document aan haar bureau'],
+      ['f47','S','Vrouw met hoed en een boek'],
+      ['f29','S','Zwart-witfoto van een vrouw op een bank'],
+      ['f18','L','Barmedewerker schenkt onder sfeerverlichting'],
+      ['f60','S','Zwart-witfoto van handen met een hoed'],
+      ['f65','S','Stilleven met knoopkussen en papieren'],
+      ['f15','S','Groepsportret van een team in het wit'],
+      ['f34','L','Barmedewerker met confetti onder lampen'],
+      ['f23','S','Portret van een ondernemer in donker licht']
+    ]
+  };
+  var MAAT = { f02:[654,900], f56:[600,900], f81:[900,617] };
+  function fotoHTML(f){
+    var id=f[0], m = MAAT[id] || (f[1]==='L' ? [900,600] : [600,900]);
+    var a = (m[0]/m[1]).toFixed(4);
+    return '<a class="foto" href="fotos/'+id+'.webp" style="--a:'+a+'"><img src="fotos/k/'+id+'.webp" width="'+m[0]+'" height="'+m[1]+'" alt="'+f[2]+'" loading="lazy" decoding="async"></a>';
+  }
+  document.querySelectorAll('[data-galerij]').forEach(function(el){
+    var soort = el.getAttribute('data-galerij');
+    if (FOTOS[soort]) el.innerHTML = FOTOS[soort].map(fotoHTML).join('');
+  });
+
+  /* rijen rechttrekken: elke rij precies even breed, geen losse foto onderaan */
+  function schik(el){
+    var W = Math.floor(el.getBoundingClientRect().width); if (!W) return;
+    var gap = parseFloat(getComputedStyle(el).columnGap) || 8;
+    var doel = W < 600 ? 250 : (W < 1100 ? 320 : 420);
+    var rijen = [], rij = [], som = 0;
+    Array.prototype.forEach.call(el.children, function(k){
+      var a = parseFloat(k.style.getPropertyValue('--a')) || 1; k._a = a;
+      rij.push(k); som += a;
+      var h = (W - gap * (rij.length - 1)) / som;
+      if (h > doel) return;
+      if (rij.length > 1) {
+        var hZonder = (W - gap * (rij.length - 2)) / (som - a);
+        if (Math.abs(hZonder - doel) < Math.abs(h - doel)) { rij.pop(); rijen.push({ items: rij, som: som - a }); rij = [k]; som = a; return; }
+      }
+      rijen.push({ items: rij, som: som }); rij = []; som = 0;
+    });
+    if (rij.length) {
+      var hL = (W - gap * (rij.length - 1)) / som;
+      if (hL > doel * 1.45 && rijen.length) { var v = rijen[rijen.length - 1]; v.items = v.items.concat(rij); v.som += som; }
+      else rijen.push({ items: rij, som: som });
+    }
+    rijen.forEach(function(r){
+      var ruimte = W - gap * (r.items.length - 1), gebruikt = 0;
+      r.items.forEach(function(k, i){
+        var w = i === r.items.length - 1 ? ruimte - gebruikt : Math.floor(ruimte * k._a / r.som);
+        gebruikt += w; k.style.flex = '0 0 ' + w + 'px'; k.style.width = w + 'px';
+      });
+    });
+    el.classList.add('is-geschikt');
+  }
+  function schikAlles(){ document.querySelectorAll('.pagina:not([hidden]) .raster').forEach(schik); }
+  if ('ResizeObserver' in window) {
+    var ro = new ResizeObserver(function(lijst){ lijst.forEach(function(e){ schik(e.target); }); });
+    document.querySelectorAll('.raster').forEach(function(r){ ro.observe(r); });
+  } else {
+    var rt; window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(schikAlles, 120); });
+  }
+
+  /* ---------- soort shoot voor de aanvraag ---------- */
+  var KOPPEN = {
+    bruiloft: 'Ben je beschikbaar op onze <em>trouwdag?</em>',
+    familie: 'Ben je beschikbaar voor onze <em>familieshoot?</em>',
+    newborn: 'Ben je beschikbaar voor onze <em>newbornshoot?</em>',
+    branding: 'Ben je beschikbaar voor onze <em>brandingshoot?</em>'
+  };
+  var paginaId = '', filterSoort = 'bruiloft', formSoort = 'bruiloft', gekozenSoort = null, gekozenPakket = null;
+  var PAKKETTEN = {
+    familie: ['Basic','Premium','Luxe','Super de luxe'],
+    newborn: ['Basic','Premium','Luxe','Super'],
+    branding: ['Basis','Uitgebreid','Premium','VIP']
+  };
+  var SOORTNAAM = { familie: 'familieshoot', newborn: 'newbornshoot', branding: 'brandingshoot' };
+  var autoBericht = '';   /* tekst die de site zelf in het bericht zette; alleen die wordt ooit vervangen */
+  function bouwPakketten(s){
+    var vak = document.getElementById('f-pakket'), veld = document.getElementById('v-pakket');
+    if (vak.getAttribute('data-soort') === s) return;
+    vak.setAttribute('data-soort', s);
+    var lijst = PAKKETTEN[s] || [];
+    veld.hidden = !lijst.length;
+    vak.innerHTML = lijst.concat(['Weet ik nog niet']).map(function(p){
+      var w = p === 'Weet ik nog niet' ? '' : p;
+      return '<label class="chip"><input type="radio" name="pakket" value="' + w + '"><span>' + p + '</span></label>';
+    }).join('');
+    werkBerichtBij('');
+  }
+  function werkBerichtBij(p){
+    var t = document.getElementById('f-bericht');
+    var nieuw = p && SOORTNAAM[formSoort] ? 'Hoi Denise, we hebben een vraag over het ' + p + ' pakket van de ' + SOORTNAAM[formSoort] + '. ' : '';
+    if (!t.value.trim() || t.value === autoBericht) { t.value = nieuw; autoBericht = nieuw; }
+  }
+  function zetPakket(p){
+    var gevonden = '';
+    document.querySelectorAll('#f-pakket input').forEach(function(r){ r.checked = !!p && r.value === p; if (r.checked) gevonden = p; });
+    werkBerichtBij(gevonden);
+  }
+  function paginaSoort(){
+    if (KOPPEN[paginaId]) return paginaId;            /* familie, newborn, branding */
+    if (paginaId === 'portfolio') return filterSoort;
+    if (paginaId === 'contact') return formSoort;
+    return 'bruiloft';
+  }
+  function werkCtaBij(){
+    var s = paginaSoort();
+    document.querySelectorAll('[data-soort-pagina]').forEach(function(a){ a.setAttribute('data-soort', s); });
+  }
+  function zetFormSoort(s){
+    if (!KOPPEN[s]) s = 'bruiloft';
+    formSoort = s;
+    var br = s === 'bruiloft';
+    document.getElementById('f-soort').value = s;
+    bouwPakketten(s);
+    document.getElementById('contact-kop').innerHTML = KOPPEN[s];
+    var OPT = ' <span class="opt">(optioneel)</span>';
+    document.getElementById('aanvraag').classList.toggle('is-bruiloft', br);
+    document.getElementById('l-datum').innerHTML = br ? 'Trouwdatum' : 'Gewenste datum' + OPT;
+    document.getElementById('l-locatie').innerHTML = (br ? 'Trouwlocatie of plaats' : 'Plaats of locatie') + OPT;
+    document.getElementById('l-bericht').innerHTML = br ? 'Bericht' + OPT : 'Jullie vraag of bericht';
+    document.getElementById('v-onbekend').hidden = !br;
+    document.getElementById('f-datum').setAttribute('aria-required', String(br && !document.getElementById('f-onbekend').checked));
+    if (!br) { document.getElementById('f-datum-fout').textContent = ''; document.getElementById('f-datum').setAttribute('aria-invalid', 'false'); }
+    document.querySelectorAll('[data-alleen-bruiloft]').forEach(function(v){
+      v.hidden = !br;
+      v.querySelectorAll('select').forEach(function(sel){ sel.disabled = !br; });
+    });
+    document.querySelectorAll('[data-reviews-soort]').forEach(function(r){ r.hidden = r.getAttribute('data-reviews-soort') !== s; });
+    var fp =document.getElementById('f-datum-fout'); if (fp.textContent) fp.textContent = datumFout();
+    werkCtaBij();
+  }
+  function datumFout(){
+    return formSoort === 'bruiloft' ? 'Vul jullie trouwdatum in, of vink aan dat jullie die nog niet precies weten.' : 'Vul jullie gewenste datum in, of vink aan dat jullie die nog niet precies weten.';
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href="#contact"]'); if (!a) return;
+    gekozenSoort = a.getAttribute('data-soort') || paginaSoort();
+    gekozenPakket = a.getAttribute('data-pakket') || null;
+    if (paginaId === 'contact') { var metPakket = !!gekozenPakket; zetFormSoort(gekozenSoort); zetPakket(gekozenPakket); gekozenSoort = gekozenPakket = null; if (metPakket) setTimeout(toonFormulier, 80); }
+  });
+
+  /* portfolio-filter */
+  var pf = document.querySelector('[data-galerij="portfolio"]');
+  function toonFilter(soort){
+    var lijst = soort==='alles' ? FOTOS.bruiloft.concat(FOTOS.familie, FOTOS.newborn, FOTOS.branding) : FOTOS[soort];
+    pf.innerHTML = lijst.map(fotoHTML).join('');
+    schik(pf);
+    document.querySelectorAll('[data-filter]').forEach(function(b){ b.setAttribute('aria-pressed', String(b.getAttribute('data-filter')===soort)); });
+    filterSoort = KOPPEN[soort] ? soort : 'bruiloft';
+    document.getElementById('portfolio-kop').innerHTML = KOPPEN[filterSoort];
+    document.getElementById('portfolio-knop').setAttribute('data-soort', filterSoort);
+    werkCtaBij();
+  }
+  document.querySelectorAll('[data-filter]').forEach(function(b){
+    b.addEventListener('click', function(){ toonFilter(b.getAttribute('data-filter')); });
+  });
+  toonFilter('bruiloft');
+
+  /* ---------- router ---------- */
+  var ROUTES = ['home','shoots','bruiloften','portfolio','familie','newborn','branding','tarieven','over','contact'];
+  var SHOOTS = ['familie','newborn','branding'];
+  var paginas = document.querySelectorAll('.pagina');
+  var mobmenu = document.getElementById('mobmenu');
+  var menuknop = document.querySelector('.menuknop');
+  var kop = document.getElementById('kop');
+
+  function sluitMenus(){
+    mobmenu.hidden = true; menuknop.setAttribute('aria-expanded','false');
+    document.documentElement.style.overflow = '';
+    var f = document.activeElement; if (f && f.closest && f.closest('.shoots')) f.blur();   /* uitklapmenu dicht na een klik */
+  }
+  function route(){
+    var id = (location.hash || '').replace('#','').toLowerCase();
+    if (ROUTES.indexOf(id) === -1) id = 'home';
+    paginas.forEach(function(p){ p.hidden = p.getAttribute('data-pagina') !== id; });
+    document.querySelectorAll('[data-nav]').forEach(function(a){
+      var n = a.getAttribute('data-nav');
+      var actief = n === id || (n === 'shoots' && SHOOTS.indexOf(id) > -1);
+      a.classList.toggle('is-actief', actief);
+      if (a.tagName === 'A') { if (n === id) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); }
+    });
+    var p = document.querySelector('.pagina[data-pagina="'+id+'"]');
+    document.title = p.getAttribute('data-titel');
+    paginaId = id;
+    var naarFormulier = id === 'contact' && !!gekozenPakket;
+    document.body.classList.toggle('op-contact', id === 'contact');
+    if (id === 'contact') { zetFormSoort(gekozenSoort || 'bruiloft'); zetPakket(gekozenPakket); gekozenSoort = gekozenPakket = null; }
+    else werkCtaBij();
+    sluitMenus();
+    window.scrollTo(0,0);
+    schikAlles();
+    if (naarFormulier) setTimeout(toonFormulier, 80);
+  }
+  window.addEventListener('hashchange', route);
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if (a && a.getAttribute('href') === (location.hash || '#home')) { e.preventDefault(); sluitMenus(); window.scrollTo({top:0,behavior:'smooth'}); }
+  });
+  route();
+
+  /* header-schaduw */
+  function scrol(){ kop.classList.toggle('is-gescrold', window.scrollY > 8); }
+  window.addEventListener('scroll', scrol, {passive:true}); scrol();
+
+  /* mobiel menu */
+  menuknop.addEventListener('click', function(){
+    var open = mobmenu.hidden;
+    mobmenu.hidden = !open; menuknop.setAttribute('aria-expanded', String(open));
+    document.documentElement.style.overflow = open ? 'hidden' : '';
+  });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !mobmenu.hidden) { sluitMenus(); menuknop.focus(); } });
+
+  /* ---------- reviews-slider (home) ---------- */
+  var rustig = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+  document.querySelectorAll('[data-rslider]').forEach(function(sl){
+    var baan = sl.querySelector('.rslider__baan');
+    function ga(r){
+      var k = baan.children[0], stap = k ? k.getBoundingClientRect().width : baan.clientWidth;
+      var max = baan.scrollWidth - baan.clientWidth, x = baan.scrollLeft, doel;
+      if (r > 0 && x >= max - 4) doel = 0;              /* aan het eind: terug naar het begin */
+      else if (r < 0 && x <= 4) doel = max;             /* aan het begin: naar het eind */
+      else doel = x + r * stap;
+      baan.scrollTo({ left: doel, behavior: rustig.matches ? 'auto' : 'smooth' });
+    }
+    sl.querySelectorAll('[data-rs]').forEach(function(b){
+      b.addEventListener('click', function(){ ga(Number(b.getAttribute('data-rs'))); });
+    });
+    baan.addEventListener('keydown', function(e){
+      if (e.key === 'ArrowRight') { e.preventDefault(); ga(1); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); ga(-1); }
+    });
+  });
+
+  /* ---------- lightbox ---------- */
+  var lb =document.getElementById('lb'), lbImg = document.getElementById('lb-img'), lbTel = document.getElementById('lb-teller');
+  var lijst = [], idx = 0, terugFocus = null;
+  function laad(i){
+    idx = (i + lijst.length) % lijst.length;
+    var a = lijst[idx], im = a.querySelector('img');
+    lbImg.classList.add('laadt');
+    var nieuw = new Image();
+    nieuw.onload = nieuw.onerror = function(){ if (lijst[idx] === a) { lbImg.src = a.getAttribute('href'); lbImg.alt = im.alt; lbImg.classList.remove('laadt'); } };
+    nieuw.src = a.getAttribute('href');
+    lbTel.textContent = (idx+1) + ' / ' + lijst.length;
+    [idx+1, idx-1].forEach(function(j){ var b = lijst[(j + lijst.length) % lijst.length]; if (b) { var v = new Image(); v.src = b.getAttribute('href'); } });
+  }
+  function openLb(groep, a){
+    lijst = Array.prototype.slice.call(groep.querySelectorAll('a.foto'));
+    terugFocus = a; lb.hidden = false; document.documentElement.style.overflow = 'hidden';
+    lbImg.src = a.querySelector('img').src; laad(lijst.indexOf(a));
+    document.getElementById('lb-sluit').focus();
+  }
+  function sluitLb(){ lb.hidden = true; document.documentElement.style.overflow = ''; lbImg.src = ''; if (terugFocus) terugFocus.focus(); }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a.foto'); if (!a) return;
+    var groep = a.closest('[data-lb]'); if (!groep) return;
+    e.preventDefault(); openLb(groep, a);
+  });
+  document.getElementById('lb-sluit').addEventListener('click', sluitLb);
+  document.getElementById('lb-vorige').addEventListener('click', function(){ laad(idx-1); });
+  document.getElementById('lb-volgende').addEventListener('click', function(){ laad(idx+1); });
+  lb.addEventListener('click', function(e){ if (e.target === lb || e.target.classList.contains('lb__fig')) sluitLb(); });
+  document.addEventListener('keydown', function(e){
+    if (lb.hidden) { if (e.key === 'Escape') sluitMenus(); return; }
+    if (e.key === 'Escape') sluitLb();
+    else if (e.key === 'ArrowRight') laad(idx+1);
+    else if (e.key === 'ArrowLeft') laad(idx-1);
+    else if (e.key === 'Tab') {
+      var f = lb.querySelectorAll('button'), eerste = f[0], laatste = f[f.length-1];
+      if (e.shiftKey && document.activeElement === eerste) { e.preventDefault(); laatste.focus(); }
+      else if (!e.shiftKey && document.activeElement === laatste) { e.preventDefault(); eerste.focus(); }
+    }
+  });
+  var tx = null, ty = null;
+  lb.addEventListener('touchstart', function(e){ tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, {passive:true});
+  lb.addEventListener('touchend', function(e){
+    if (tx === null) return;
+    var dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) laad(idx + (dx < 0 ? 1 : -1));
+    tx = null;
+  });
+
+  /* ---------- formulier ---------- */
+  function toonFormulier(){
+    var kaart = document.querySelector('.formkaart'); if (!kaart) return;
+    naarStap(1, true);
+    kaart.scrollIntoView({ behavior: 'auto', block: 'start' });
+    kaart.classList.remove('is-gemarkeerd'); void kaart.offsetWidth; kaart.classList.add('is-gemarkeerd');
+    /* op een computer meteen verder typen achter de begonnen zin; op telefoons niet (toetsenbord zou het formulier verbergen) */
+    if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      var t = document.getElementById('f-bericht'); t.focus({ preventScroll: true }); t.setSelectionRange(t.value.length, t.value.length);
+    }
+  }
+  function waTekst(){
+    var t = document.getElementById('f-bericht').value.trim();
+    if (!t) t = formSoort === 'bruiloft' ? 'Hoi Denise, ben je nog beschikbaar op onze trouwdag?' : 'Hoi Denise, we hebben een vraag over de ' + (SOORTNAAM[formSoort] || 'fotoshoot') + '.';
+    var d = document.getElementById('f-datum').value;
+    if (d) t += ' (datum: ' + d.split('-').reverse().join('-') + ')';
+    return t;
+  }
+  document.querySelectorAll('[data-wa]').forEach(function(a){
+    a.addEventListener('click', function(){ a.href = 'https://wa.me/31634447470?text=' + encodeURIComponent(waTekst()); });
+  });
+  var form = document.getElementById('aanvraag');
+  var stappen = form.querySelectorAll('fieldset[data-stap]');
+  var datum = document.getElementById('f-datum'), onbekend = document.getElementById('f-onbekend');
+  function fout(id, tekst){
+    var veld = document.getElementById(id), p = document.getElementById(id + '-fout');
+    p.textContent = tekst || ''; veld.setAttribute('aria-invalid', tekst ? 'true' : 'false');
+    return !tekst;
+  }
+  ['f-datum','f-naam','f-email'].forEach(function(id){
+    document.getElementById(id).addEventListener('input', function(){ fout(id, ''); });
+  });
+  document.getElementById('f-soort').addEventListener('change', function(){ zetFormSoort(this.value); });
+  document.getElementById('f-pakket').addEventListener('change', function(e){ if (e.target.name === 'pakket') werkBerichtBij(e.target.value); });
+  document.getElementById('f-bericht').addEventListener('focus', function(){
+    var t = this; if (t.value && t.value === autoBericht) setTimeout(function(){ t.setSelectionRange(t.value.length, t.value.length); }, 0);   /* verder typen achter de zin */
+  });
+  onbekend.addEventListener('change', function(){ datum.setAttribute('aria-required', String(!onbekend.checked)); if (onbekend.checked) fout('f-datum',''); });
+  function naarStap(n, stil){
+    stappen.forEach(function(s){ s.hidden = s.getAttribute('data-stap') !== String(n); });
+    document.getElementById('stap-tekst').textContent = n + ' van 2';
+    document.getElementById('stap-status').textContent = 'Stap ' + n + ' van 2';
+    document.getElementById('stap-balk-2').classList.toggle('aan', n === 2);
+    if (stil) return;
+    var eerste = form.querySelector('fieldset[data-stap="'+n+'"] input');
+    if (eerste) eerste.focus({preventScroll:true});
+    var top = form.closest('.formkaart').getBoundingClientRect().top;
+    if (top < 80) window.scrollBy({top: top - 110, behavior:'smooth'});
+  }
+  document.getElementById('f-volgende').addEventListener('click', function(){
+    if (formSoort === 'bruiloft' && !onbekend.checked && !datum.value) { fout('f-datum', datumFout()); datum.focus(); return; }
+    naarStap(2);
+  });
+  document.getElementById('f-terug').addEventListener('click', function(){ naarStap(1); });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var ok = true, eersteFout = null;
+    [['f-naam','Vul je naam in.']].forEach(function(r){
+      var v = document.getElementById(r[0]);
+      if (!v.value.trim()) { fout(r[0], r[1]); ok = false; eersteFout = eersteFout || v; }
+    });
+    var em = document.getElementById('f-email');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value.trim())) { fout('f-email','Vul een geldig e-mailadres in.'); ok = false; eersteFout = eersteFout || em; }
+    if (!ok) { eersteFout.focus(); return; }
+    form.hidden = true;
+    var b = document.getElementById('bedankt'); b.hidden = false; b.focus();
+  });
+})();
+</script>
+</body></html>
