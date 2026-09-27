@@ -533,6 +533,8 @@ a:hover .pijl,a:focus-visible .pijl{transform:translateX(8px)}
 
 /* ---------- tarieven: blokken zoals ontwerp Nacht (licht) ---------- */
 .tarief-blokken{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:clamp(56px,6vw,96px)}
+.tarief-blokken:first-child{margin-top:0}
+.tarief-blokken + .tarief-bruiloft{margin-top:clamp(56px,6vw,96px)}
 .tarief-blok{display:flex;flex-direction:column;background:#F7F6F4;border:1px solid var(--lijn)}
 .tarief-blok>img{width:100%;aspect-ratio:3/2;object-fit:cover}
 .tb-inhoud{display:flex;flex-direction:column;flex:1;padding:34px clamp(22px,2.4vw,36px) 36px}
@@ -1267,24 +1269,6 @@ body.op-contact .onderbalk{display:none}
 
   <section class="sectie">
     <div class="wrap">
-      <article class="tarief-bruiloft">
-        <figure class="tarief-bruiloft__foto"><img src="fotos/k/f31.webp" width="600" height="900" alt="Eerste dans van het bruidspaar tussen de gasten" loading="lazy" decoding="async"></figure>
-        <div class="tarief-bruiloft__tekst">
-          <p class="label">Jullie droombruiloft</p>
-          <h2 class="prijs-groot"><span>vanaf</span>€ 2.150</h2>
-          <p class="kader__intro" style="margin:0">Bruiloftpakketten beginnen vanaf € 2.150 en zijn inclusief:</p>
-          <ul class="inclusief">
-            <li>6 uur fotografie op jullie mooiste dag</li>
-            <li>Een kennismakingsgesprek om elkaar te leren kennen en jullie wensen te bespreken</li>
-            <li>Grote preview van minimaal 50 beelden, enkele dagen na jullie bruiloft</li>
-            <li>Minimaal 400 professioneel bewerkte foto's in hoge resolutie</li>
-            <li>Persoonlijke galerij, die jullie eenvoudig kunnen delen met vrienden en familie</li>
-            <li>Een linnen fotoalbum van 20 × 20 cm met de allermooiste momenten</li>
-          </ul>
-          <a class="knop" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a>
-        </div>
-      </article>
-
       <div class="tarief-blokken">
         <article class="tarief-blok">
           <img src="fotos/k/f16.webp" width="900" height="600" alt="Gezin wandelt over het zand in warm tegenlicht tussen de dennen" loading="lazy" decoding="async">
@@ -1326,6 +1310,24 @@ body.op-contact .onderbalk{display:none}
           </div>
         </article>
       </div>
+
+      <article class="tarief-bruiloft">
+        <figure class="tarief-bruiloft__foto"><img src="fotos/k/f31.webp" width="600" height="900" alt="Eerste dans van het bruidspaar tussen de gasten" loading="lazy" decoding="async"></figure>
+        <div class="tarief-bruiloft__tekst">
+          <p class="label">Jullie droombruiloft</p>
+          <h2 class="prijs-groot"><span>vanaf</span>€ 2.150</h2>
+          <p class="kader__intro" style="margin:0">Bruiloftpakketten beginnen vanaf € 2.150 en zijn inclusief:</p>
+          <ul class="inclusief">
+            <li>6 uur fotografie op jullie mooiste dag</li>
+            <li>Een kennismakingsgesprek om elkaar te leren kennen en jullie wensen te bespreken</li>
+            <li>Grote preview van minimaal 50 beelden, enkele dagen na jullie bruiloft</li>
+            <li>Minimaal 400 professioneel bewerkte foto's in hoge resolutie</li>
+            <li>Persoonlijke galerij, die jullie eenvoudig kunnen delen met vrienden en familie</li>
+            <li>Een linnen fotoalbum van 20 × 20 cm met de allermooiste momenten</li>
+          </ul>
+          <a class="knop" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a>
+        </div>
+      </article>
       <p class="pakket-noot" style="text-align:center;max-width:none">Prijzen zijn inclusief btw.</p>
 
       <div class="tarief-reviews">
