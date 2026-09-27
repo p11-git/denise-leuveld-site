@@ -601,7 +601,7 @@ body.op-contact .onderbalk{display:none}
     <nav class="kop__nav" aria-label="Hoofdmenu">
       <a class="navlink" href="#home" data-nav="home">Home</a>
       <a class="navlink" href="#bruiloften" data-nav="bruiloften">Bruiloften</a>
-      <a class="navlink" href="#portfolio" data-nav="portfolio">Portfolio</a>
+      <a class="navlink" href="#branding" data-nav="branding">Branding</a>
       <div class="shoots" id="shoots">
         <a class="navlink" href="#shoots" data-nav="shoots" aria-haspopup="true">Shoots <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
         <div class="shoots__paneel" id="shoots-paneel">
@@ -637,7 +637,7 @@ body.op-contact .onderbalk{display:none}
   <nav class="mobmenu__lijst" aria-label="Mobiel menu">
     <a href="#home" data-nav="home">Home</a>
     <a href="#bruiloften" data-nav="bruiloften">Bruiloften</a>
-    <a href="#portfolio" data-nav="portfolio">Portfolio</a>
+    <a href="#branding" data-nav="branding">Branding</a>
     <a href="#shoots" data-nav="shoots">Shoots</a>
     <div class="mobmenu__sub"><a href="#bruiloften" data-nav="bruiloften">Bruiloft</a><a href="#familie" data-nav="familie">Familie</a><a href="#newborn" data-nav="newborn">Newborn</a><a href="#branding" data-nav="branding">Branding</a></div>
     <a class="mobmenu__kop" href="#bruiloften/prijzen" data-nav="tarieven">Tarieven</a>
@@ -659,7 +659,7 @@ body.op-contact .onderbalk{display:none}
       <p class="bovenregel"><b>Award winnende fotografie</b><br>Bruiloft · lifestyle · branding</p>
       <h1 class="drieluik__kop">De dag vliegt voorbij. <em>De foto's blijven voor altijd.</em></h1>
       <p class="drieluik__sub">Award winnende trouwfotograaf uit Twente · 200+ bruiloften · bijna 10 jaar ervaring</p>
-      <div class="knoppen"><a class="knop knop--wit" href="#shoots">Bekijk fotoshoot opties</a><a class="knop knop--lijnwit" href="#portfolio">Bekijk portfolio</a></div>
+      <div class="knoppen"><a class="knop knop--wit" href="#shoots">Bekijk fotoshoot opties</a><a class="knop knop--lijnwit" href="#bruiloften">Bekijk bruiloften</a></div>
     </div>
   </div>
 
@@ -697,7 +697,7 @@ body.op-contact .onderbalk{display:none}
           <a class="foto" href="fotos/f62.webp" style="--a:.6667"><img src="fotos/k/f62.webp" width="600" height="900" alt="Gedekte trouwtafel met bloemen en kaarsen" loading="lazy" decoding="async"></a>
         </div>
       </div>
-      <div class="midden" style="margin-top:clamp(40px,5vw,64px)"><a class="knop" href="#portfolio">Bekijk portfolio</a></div>
+      <div class="midden" style="margin-top:clamp(40px,5vw,64px)"><a class="knop" href="#bruiloften/galerij">Bekijk meer foto's</a></div>
     </div>
   </section>
 
@@ -956,13 +956,13 @@ body.op-contact .onderbalk{display:none}
 
   <section class="sectie" style="padding-top:0">
     <div class="wrap wrap--smal midden">
-      <p>Wil je zien hoe dat eruitziet? Scroll dan door mijn portfolio, of stuur een berichtje om te checken of jullie datum nog vrij is.</p>
+      <p>Wil je zien hoe dat eruitziet? Scroll dan door de foto's hieronder, of stuur een berichtje om te checken of jullie datum nog vrij is.</p>
       <p class="lead" style="font-style:italic;margin:14px 0 34px">Ik ben super benieuwd naar jullie plannen!</p>
-      <div class="knoppen"><a class="knop" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a><a class="knop knop--rand" href="#portfolio">Bekijk portfolio</a></div>
+      <div class="knoppen"><a class="knop" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a><a class="knop knop--rand" href="#bruiloften/galerij">Bekijk de foto's</a></div>
     </div>
   </section>
 
-  <section aria-label="Galerij bruiloften">
+  <section data-anker="galerij" aria-label="Galerij bruiloften">
     <div class="wrap--breed" style="margin:0 auto">
       <div class="raster" data-lb data-galerij="bruiloft"></div>
     </div>
@@ -1036,36 +1036,6 @@ body.op-contact .onderbalk{display:none}
     <div class="band__tekst">
       <h2 class="h2">Ben je beschikbaar op onze <em>trouwdag?</em></h2>
       <div class="knoppen" style="justify-content:center;margin-top:36px"><a class="knop knop--wit" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a></div>
-    </div>
-  </section>
-</section>
-
-<!-- ================= PORTFOLIO ================= -->
-<section class="pagina" data-pagina="portfolio" data-titel="Portfolio · Denise Leuveld Fotografie" hidden>
-  <header class="strook strook--kort op-foto">
-    <img src="fotos/f38.webp" width="2400" height="1600" alt="Zwart-witfoto van het bruidspaar hand in hand in de zonnestralen" decoding="async">
-    <div class="strook__tekst">
-      <h1 class="h1" style="text-transform:uppercase;letter-spacing:.18em;margin-right:-.18em">Portfolio</h1>
-    </div>
-  </header>
-  <div class="filter">
-    <div class="filter__lijst" role="group" aria-label="Filter op soort shoot">
-      <button type="button" data-filter="alles" aria-pressed="false">Alles</button>
-      <button type="button" data-filter="bruiloft" aria-pressed="true">Bruiloften</button>
-      <button type="button" data-filter="familie" aria-pressed="false">Familie</button>
-      <button type="button" data-filter="newborn" aria-pressed="false">Newborn</button>
-      <button type="button" data-filter="branding" aria-pressed="false">Branding</button>
-    </div>
-  </div>
-  <section style="padding-top:var(--gat)" aria-label="Foto's">
-    <div class="wrap--breed" style="margin:0 auto">
-      <div class="raster" data-lb data-galerij="portfolio" aria-live="polite"></div>
-    </div>
-  </section>
-  <section class="sectie midden">
-    <div class="wrap">
-      <h2 class="h2" id="portfolio-kop">Ben je beschikbaar op onze <em>trouwdag?</em></h2>
-      <div class="knoppen" style="margin-top:34px"><a class="knop" href="#contact" data-soort="bruiloft" id="portfolio-knop">Is jullie datum nog vrij?</a></div>
     </div>
   </section>
 </section>
@@ -1294,7 +1264,7 @@ body.op-contact .onderbalk{display:none}
       <div class="over-grid__t2 tekst">
         <p>Met mijn interesse in mensen en kunst is fotografie mijn ultieme droombaan! Ik begon met het maken van foto's van familieleden en vrienden, en ontwikkelde zo langzaam de stijl die je nu bij me kunt vinden. Inmiddels alweer bijna 10 fotografiejaren, vele super toffe shoots met lieve klanten en +200 bruiloften verder, kan ik wel zeggen dat ik dit het allerleukste en meest bijzondere werk vind dat er bestaat! Elke dag met een mega smile op pad, en vol mooie en persoonlijke verhalen weer thuiskomen!</p>
         <p class="lead" style="font-style:italic;margin-top:1em">Kijk rustig rond en als je vragen hebt, dan beantwoord ik ze heel graag!</p>
-        <div class="knoppen" style="margin-top:34px"><a class="knop" href="#portfolio">Bekijk portfolio</a><a class="knop knop--rand" href="#contact" data-soort="bruiloft">Stuur een berichtje</a></div>
+        <div class="knoppen" style="margin-top:34px"><a class="knop" href="#shoots">Bekijk fotoshoot opties</a><a class="knop knop--rand" href="#contact" data-soort="bruiloft">Stuur een berichtje</a></div>
       </div>
       <figure class="over-foto over-grid__f2"><img src="fotos/k/f02.webp" width="654" height="900" alt="Denise lacht met haar camera in de hand" loading="lazy" decoding="async"></figure>
     </div>
@@ -1457,9 +1427,9 @@ body.op-contact .onderbalk{display:none}
     <div class="voet__grid">
       <nav class="voet__menu" aria-label="Footermenu">
         <a href="#bruiloften">Bruiloften</a><a href="#familie">Familie</a>
-        <a href="#portfolio">Portfolio</a><a href="#newborn">Newborn</a>
-        <a href="#bruiloften/prijzen">Tarieven</a><a href="#branding">Branding</a>
-        <a href="#over">Over Denise</a><a href="#contact">Contact</a>
+        <a href="#branding">Branding</a><a href="#newborn">Newborn</a>
+        <a href="#bruiloften/prijzen">Tarieven</a><a href="#over">Over Denise</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="voet__contact">
         <span>Borne, Twente</span>
@@ -1673,7 +1643,6 @@ body.op-contact .onderbalk{display:none}
   }
   function paginaSoort(){
     if (KOPPEN[paginaId]) return paginaId;            /* familie, newborn, branding */
-    if (paginaId === 'portfolio') return filterSoort;
     if (paginaId === 'contact') return formSoort;
     return 'bruiloft';
   }
@@ -1714,26 +1683,9 @@ body.op-contact .onderbalk{display:none}
     if (paginaId === 'contact') { var metPakket = !!gekozenPakket; zetFormSoort(gekozenSoort); zetPakket(gekozenPakket); gekozenSoort = gekozenPakket = null; if (metPakket) setTimeout(toonFormulier, 80); }
   });
 
-  /* portfolio-filter */
-  var pf = document.querySelector('[data-galerij="portfolio"]');
-  function toonFilter(soort){
-    var lijst = soort==='alles' ? FOTOS.bruiloft.concat(FOTOS.familie, FOTOS.newborn, FOTOS.branding) : FOTOS[soort];
-    pf.innerHTML = lijst.map(fotoHTML).join('');
-    schik(pf);
-    document.querySelectorAll('[data-filter]').forEach(function(b){ b.setAttribute('aria-pressed', String(b.getAttribute('data-filter')===soort)); });
-    filterSoort = KOPPEN[soort] ? soort : 'bruiloft';
-    document.getElementById('portfolio-kop').innerHTML = KOPPEN[filterSoort];
-    document.getElementById('portfolio-knop').setAttribute('data-soort', filterSoort);
-    werkCtaBij();
-  }
-  document.querySelectorAll('[data-filter]').forEach(function(b){
-    b.addEventListener('click', function(){ toonFilter(b.getAttribute('data-filter')); });
-  });
-  toonFilter('bruiloft');
-
   /* ---------- router ---------- */
-  var ROUTES = ['home','shoots','bruiloften','portfolio','familie','newborn','branding','over','contact'];
-  var SHOOTS = ['familie','newborn','branding'];
+  var ROUTES = ['home','shoots','bruiloften','familie','newborn','branding','over','contact'];
+  var SHOOTS = ['familie','newborn'];   /* branding heeft een eigen menuknop */
   var paginas = document.querySelectorAll('.pagina');
   var mobmenu = document.getElementById('mobmenu');
   var menuknop = document.querySelector('.menuknop');
@@ -1755,6 +1707,7 @@ body.op-contact .onderbalk{display:none}
     var delen = (location.hash || '').replace('#','').toLowerCase().split('/');
     var id = delen[0], anker = delen[1] || '';
     if (id === 'tarieven') { id = 'bruiloften'; anker = 'prijzen'; }   /* oude links naar de tarievenpagina */
+    if (id === 'portfolio') { id = 'bruiloften'; anker = 'galerij'; }  /* oude links naar de portfoliopagina (bewaard in bewaard/) */
     if (ROUTES.indexOf(id) === -1) id = 'home';
     paginas.forEach(function(p){ p.hidden = p.getAttribute('data-pagina') !== id; });
     document.querySelectorAll('[data-nav]').forEach(function(a){
