@@ -74,6 +74,7 @@ em{font-style:italic}
 .shoots__paneel{position:absolute;left:50%;top:100%;padding-top:12px;opacity:0;visibility:hidden;transform:translate(-50%,6px);transition:opacity .25s,transform .25s,visibility .25s;z-index:5}
 .shoots:hover .shoots__paneel,.shoots:focus-within .shoots__paneel{opacity:1;visibility:visible;transform:translate(-50%,0)}
 .shoots:hover .navlink svg,.shoots:focus-within .navlink svg{transform:rotate(180deg)}
+.shoots.is-dicht .shoots__paneel{opacity:0;visibility:hidden}
 .shoots__binnen{display:grid;grid-template-columns:repeat(4,136px);gap:16px;background:#fff;border:1px solid var(--lijn);padding:22px;box-shadow:0 30px 60px -36px rgba(0,0,0,.35)}
 .shoots__item{text-decoration:none;display:grid;gap:12px}
 .shoots__item img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:opacity .25s}
@@ -81,6 +82,10 @@ em{font-style:italic}
 .shoots__item span{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase}
 .shoots__item.is-actief span{text-decoration:underline;text-underline-offset:5px}
 /* tarieven: zelfde fotomenu als shoots; "Tarieven" zelf is geen link, de foto's springen naar het prijsblok (aparte tarievenpagina bewaard in bewaard/) */
+.tm-foto{position:relative;display:block;overflow:hidden}
+.tm-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,0) 45%,rgba(10,10,10,.6))}
+.tm-foto i{position:absolute;left:0;right:0;bottom:14px;z-index:2;font:500 10px/1 var(--sans);font-style:normal;letter-spacing:.26em;text-transform:uppercase;color:#fff;text-align:center}
+.tm-foto i::before{content:"";display:block;width:22px;height:1px;margin:0 auto 9px;background:rgba(255,255,255,.75)}
 
 .menuknop{align-items:center;gap:10px;background:none;border:0;padding:10px 0 10px 10px;cursor:pointer;font:500 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;min-height:44px}
 .menuknop__lijnen{width:22px;height:9px;position:relative}
@@ -617,10 +622,10 @@ body.op-contact .onderbalk{display:none}
         <button class="navlink" type="button" aria-haspopup="true">Tarieven <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
         <div class="shoots__paneel">
           <div class="shoots__binnen">
-            <a class="shoots__item" href="#bruiloften/prijzen"><img src="fotos/k/f31.webp" width="600" height="900" alt="Eerste dans van het bruidspaar tussen de gasten" loading="lazy" decoding="async"><span>Bruiloft</span></a>
-            <a class="shoots__item" href="#familie/prijzen"><img src="fotos/k/f86.webp" width="600" height="900" alt="Moeder met drie lachende kinderen tussen het groen" loading="lazy" decoding="async"><span>Familie</span></a>
-            <a class="shoots__item" href="#newborn/prijzen"><img src="fotos/k/f76.webp" width="600" height="900" alt="Ouders bewonderen hun pasgeboren baby" loading="lazy" decoding="async"><span>Newborn</span></a>
-            <a class="shoots__item" href="#branding/prijzen"><img src="fotos/k/f33.webp" width="600" height="900" alt="Ondernemer lacht op een leren bank" loading="lazy" decoding="async"><span>Branding</span></a>
+            <a class="shoots__item" href="#bruiloften/prijzen"><span class="tm-foto"><img src="fotos/k/f31.webp" width="600" height="900" alt="Eerste dans van het bruidspaar tussen de gasten" loading="lazy" decoding="async"><i>Tarieven</i></span><span>Bruiloft</span></a>
+            <a class="shoots__item" href="#familie/prijzen"><span class="tm-foto"><img src="fotos/k/f86.webp" width="600" height="900" alt="Moeder met drie lachende kinderen tussen het groen" loading="lazy" decoding="async"><i>Tarieven</i></span><span>Familie</span></a>
+            <a class="shoots__item" href="#newborn/prijzen"><span class="tm-foto"><img src="fotos/k/f76.webp" width="600" height="900" alt="Ouders bewonderen hun pasgeboren baby" loading="lazy" decoding="async"><i>Tarieven</i></span><span>Newborn</span></a>
+            <a class="shoots__item" href="#branding/prijzen"><span class="tm-foto"><img src="fotos/k/f33.webp" width="600" height="900" alt="Ondernemer lacht op een leren bank" loading="lazy" decoding="async"><i>Tarieven</i></span><span>Branding</span></a>
           </div>
         </div>
       </div>
@@ -1191,28 +1196,79 @@ body.op-contact .onderbalk{display:none}
     <div class="strook__tekst">
       <p class="label">Branding</p>
       <h1 class="h1">Branding &amp; <em>business</em></h1>
+      <div class="knoppen"><a class="knop knop--wit" href="#contact" data-soort="branding">Stuur een berichtje</a></div>
     </div>
   </header>
 
   <section class="sectie">
-    <div class="wrap split staand tekst-split--om">
-      <figure class="split__foto"><img src="fotos/k/f54.webp" width="599" height="900" alt="Ondernemer met een boek in haar hand" loading="lazy" decoding="async"></figure>
+    <div class="wrap intro">
+      <p class="lead">Als fotograaf weet ik als geen ander hoe belangrijk sprekende beelden zijn om impact te maken. Dat klanten in één oogopslag zien <em>wie</em> je bent, wat je doet en waarom ze bij jou moeten zijn.</p>
+    </div>
+  </section>
+
+  <div class="wrap--breed" style="margin:0 auto">
+    <div class="duo" data-lb>
+      <a class="foto" href="fotos/f13.webp" style="--a:.6667"><img src="fotos/k/f13.webp" width="600" height="900" alt="Ondernemer zit op de grond met een baguette" loading="lazy" decoding="async"></a>
+      <a class="foto" href="fotos/f33.webp" style="--a:.6667"><img src="fotos/k/f33.webp" width="600" height="900" alt="Ondernemer lacht op een leren bank" loading="lazy" decoding="async"></a>
+    </div>
+  </div>
+
+  <section class="sectie">
+    <div class="wrap wrap--smal midden">
+      <p class="band__citaat" style="font-style:italic">Authentieke fotografie voor ondernemers. <em>Beelden die jouw merk laten leven.</em></p>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0">
+    <div class="wrap split tekst-split">
+      <figure class="split__foto"><img src="fotos/k/f39.webp" width="900" height="600" alt="Schoonheidsspecialist aan het werk met een klant" loading="lazy" decoding="async"></figure>
       <div class="split__tekst tekst">
-        <p class="lead">Als fotograaf weet ik als geen ander hoe belangrijk sprekende beelden zijn om impact te maken. Dat klanten in één oogopslag zien WIE je bent, wat je doet en waarom ze bij jou moeten zijn.</p>
-        <p style="margin-top:1.4em">Het complete plaatje van een sfeerbepalende locatie, kleding en kleurgebruik maakt de look-and-feel van de foto's, en dus je (online) visitekaartje. Bij de brandingshoot maken we een beeldbank van foto's waar je nog lange tijd gebruik van kunt maken en uit kunt kiezen.</p>
+        <p class="lead">Het complete plaatje van een sfeerbepalende locatie, kleding en kleurgebruik maakt de look-and-feel van de foto's, en dus je (online) visitekaartje.</p>
+        <p>Bij de brandingshoot maken we een beeldbank van foto's waar je nog lange tijd gebruik van kunt maken en uit kunt kiezen.</p>
         <p>Tijdens een (video)call leren we elkaar kennen en bespreken we jouw visie als persoon en je bedrijf. Ik hoor graag wie je bent en wat je wilt uitstralen, en samen bespreken we hoe we dat gaan aanpakken!</p>
       </div>
     </div>
   </section>
 
-  <section aria-label="Galerij branding">
+  <section data-anker="galerij" aria-label="Galerij branding">
     <div class="wrap--breed" style="margin:0 auto">
       <div class="raster" data-lb data-galerij="branding"></div>
     </div>
   </section>
 
+  <section class="sectie">
+    <div class="wrap">
+      <h2 class="h2">Zo werkt het</h2>
+      <ol class="stappengrid">
+        <li><span class="nr">01</span><h3 class="stap-titel">Even kennismaken</h3><p>Tijdens een (video)call leren we elkaar kennen. Ik hoor graag wie je bent, wat je doet en wat je wilt uitstralen.</p></li>
+        <li><span class="nr">02</span><h3 class="stap-titel">Het complete plaatje</h3><p>Samen bespreken we locatie, kleding en kleurgebruik, zodat de foto's precies passen bij jouw merk.</p></li>
+        <li><span class="nr">03</span><h3 class="stap-titel">De shoot</h3><p>Je hoeft geen model te zijn: ik geef precies aan wat je moet doen en welke hoeken het mooist uitkomen.</p></li>
+        <li><span class="nr">04</span><h3 class="stap-titel">Jij kiest</h3><p>In je eigen online galerij kies je de beelden die het best bij jou en je bedrijf passen.</p></li>
+        <li><span class="nr">05</span><h3 class="stap-titel">Klaar voor gebruik</h3><p>Je gekozen beelden ontvang je professioneel nabewerkt en in hoge resolutie.</p></li>
+        <li><span class="nr">06</span><h3 class="stap-titel">Jouw beeldbank</h3><p>Beelden voor je website en socials, waar je nog lange tijd gebruik van kunt maken.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sectie" style="padding-top:0;padding-bottom:0">
+    <div class="wrap">
+      <div class="reviews__kop"><h2 class="h2">Lovely <em>reviews</em></h2></div>
+      <div class="reviews reviews--licht">
+        <figure class="review">
+          <blockquote class="review__q">Haar natuurlijke aanpak en nauwkeurige aanwijzingen maakten het voor ons gemakkelijk voor de camera te staan. Met diverse outfits en locaties zorgde ze voor voldoende materiaal voor onze website en socials.</blockquote>
+          <figcaption class="review__naam">Filk Estates Marbella</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__q">Het resultaat is schitterend; ik ben er zo blij mee en heb nu toegang tot een heleboel foto's die ik zakelijk kan gebruiken. Het is het echt waard!</blockquote>
+          <figcaption class="review__naam">Meike · brandingshoot</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <section data-anker="prijzen" class="sectie">
     <div class="wrap">
+      <h2 class="h2" style="margin-bottom:clamp(36px,4vw,56px)">Pakketten</h2>
       <div class="pakketten">
         <article class="pakket"><h3 class="pakket__naam">Basis</h3><p class="pakket__prijs">€ 349</p><ul><li>1 uur fotografie</li><li>Professionele nabewerking van alle geselecteerde foto's</li><li>Online galerij om uit te kiezen</li><li>30 zelfgekozen beelden in hoge resolutie</li><li>Meer foto's bestellen? Dat kan!</li><li>Locatie naar keuze binnen 100 km vanaf Borne</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="branding" data-pakket="Basis">Meer informatie</a></article>
         <article class="pakket"><h3 class="pakket__naam">Uitgebreid</h3><p class="pakket__prijs">€ 499</p><ul><li>2 uur fotografie</li><li>Professionele nabewerking</li><li>Online galerij</li><li>60 zelfgekozen beelden in hoge resolutie</li><li>Meer foto's bestellen? Dat kan!</li><li>Locatie binnen 150 km</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="branding" data-pakket="Uitgebreid">Meer informatie</a></article>
@@ -1222,20 +1278,11 @@ body.op-contact .onderbalk{display:none}
     </div>
   </section>
 
-  <section class="sectie" style="padding-top:0">
-    <div class="wrap">
-      <div class="reviews__kop"><h2 class="h2">Lovely <em>reviews</em></h2></div>
-      <div class="reviews reviews--licht">
-        <figure class="review">
-          <blockquote class="review__q">Denise Leuveld heeft een uitstekende fotoshoot voor ons makelaarskantoor in Marbella verzorgd. Haar natuurlijke aanpak en nauwkeurige aanwijzingen maakten het voor ons gemakkelijk voor de camera te staan. Met diverse outfits en locaties zorgde ze voor voldoende materiaal voor onze website en socials. De foto's zijn van geweldige kwaliteit, en we ontvangen veel positieve reacties. We bevelen Denise zeker aan voor een professionele en plezierige fotosessie!</blockquote>
-          <figcaption class="review__naam">Filk Estates Marbella</figcaption>
-        </figure>
-        <figure class="review">
-          <blockquote class="review__q">Wow, ik ben ontzettend blij met de foto's die Denise van mij heeft gemaakt! Het is zo leuk om een brandingshoot te doen, en met Denise is het echt een feest. Ze geeft precies aan wat je moet doen en welke hoeken het mooist uitkomen, echt mega professioneel. Het resultaat is schitterend; ik ben er zo blij mee en heb nu toegang tot een heleboel foto's die ik zakelijk kan gebruiken. Het is het echt waard!</blockquote>
-          <figcaption class="review__naam">Meike · brandingshoot</figcaption>
-        </figure>
-      </div>
-      <div class="midden" style="margin-top:clamp(48px,5vw,72px)"><a class="knop" href="#contact" data-soort="branding">Stuur een berichtje</a></div>
+  <section class="band band--cta op-foto">
+    <img src="fotos/f45.webp" width="2400" height="1599" alt="Team overlegt samen aan tafel" loading="lazy" decoding="async">
+    <div class="band__tekst">
+      <h2 class="h2">Klaar voor beelden die jouw merk <em>laten leven?</em></h2>
+      <div class="knoppen" style="justify-content:center;margin-top:36px"><a class="knop knop--wit" href="#contact" data-soort="branding">Stuur een berichtje</a></div>
     </div>
   </section>
 </section>
@@ -1729,6 +1776,10 @@ body.op-contact .onderbalk{display:none}
     if (naarFormulier) setTimeout(toonFormulier, 80);
   }
   window.addEventListener('hashchange', route);
+  document.querySelectorAll('.shoots').forEach(function(m){
+    m.addEventListener('click', function(e){ if (e.target.closest('.shoots__paneel a')) m.classList.add('is-dicht'); });
+    m.addEventListener('mouseleave', function(){ m.classList.remove('is-dicht'); });
+  });
   document.addEventListener('click', function(e){
     var a = e.target.closest('a[href^="#"]');
     if (a && a.getAttribute('href') === (location.hash || '#home')) {
