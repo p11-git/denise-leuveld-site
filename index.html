@@ -1696,6 +1696,8 @@ body.op-contact .onderbalk{display:none}
   /* #pagina/anker, bijv. #familie/prijzen: pagina tonen en naar dat blok springen */
   function naarAnker(p, anker){
     var el = p && p.querySelector('[data-anker="' + anker + '"]'); if (!el) return;
+    /* desktop: staan de reviews direct boven de pakketten, land dan op "Lovely reviews" zodat de pakketten er meteen onder staan */
+    if (anker === 'prijzen' && window.innerWidth > 900) { var vorige = el.previousElementSibling; if (vorige && vorige.querySelector('.reviews__kop')) el = vorige; }
     var doel = el.firstElementChild || el;
     function ga(){ window.scrollTo(0, Math.max(0, doel.getBoundingClientRect().top + window.scrollY - kop.offsetHeight - 32)); }
     requestAnimationFrame(ga); setTimeout(ga, 350);
