@@ -455,6 +455,8 @@ em{font-style:italic}
 .voet__top{text-align:center;padding-bottom:clamp(40px,5vw,64px)}
 .voet__top .woordmerk{font-size:clamp(24px,2.6vw,34px)}
 .voet__quote{font:300 clamp(24px,2.4vw,34px)/1.3 var(--serif);font-style:italic;margin-top:18px}
+.voet__knop{display:flex;justify-content:center;margin-top:30px}
+.op-contact .voet__knop{display:none}
 .voet__grid{display:grid;grid-template-columns:1.1fr 1.3fr 1.6fr;gap:40px;padding:44px 0;border-top:1px solid var(--lijn);border-bottom:1px solid var(--lijn)}
 .voet__menu{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;align-content:start}
 .voet__menu a,.voet__contact a,.voet__contact span{font-size:15px;line-height:1.6;text-decoration:none;display:block;padding:4px 0}
@@ -1098,7 +1100,6 @@ body.op-contact .onderbalk{display:none}
         <article class="pakket"><h3 class="pakket__naam">Super de luxe</h3><p class="pakket__prijs">€ 549</p><ul><li>Ca. 1,5 uur fotografie</li><li>Online galerij met minimaal 80 bewerkte foto's</li><li>Alle foto's in hoge resolutie</li><li>Groot linnen album 20 × 30 cm met 50 foto's</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="familie" data-pakket="Super de luxe">Meer informatie</a></article>
       </div>
       <p class="pakket-noot">De familieshoots zijn t/m 6 personen. Prijzen zijn inclusief btw. Binnen een straal van 15 km vanaf Borne worden geen reiskosten in rekening gebracht. Daarbuiten is het € 0,50 per km.</p>
-      <div style="margin-top:36px"><a class="knop" href="#contact" data-soort="familie">Stuur een berichtje</a></div>
     </div>
   </section>
 </section>
@@ -1179,7 +1180,6 @@ body.op-contact .onderbalk{display:none}
         <article class="pakket"><h3 class="pakket__naam">Super</h3><p class="pakket__prijs">€ 549</p><ul><li>Ca. 2 uur fotografie bij jullie thuis</li><li>Alle foto's in hoge resolutie</li><li>Groot linnen album 20 × 30 cm met 50 foto's</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="newborn" data-pakket="Super">Meer informatie</a></article>
       </div>
       <p class="pakket-noot">Prijzen zijn inclusief btw. Binnen een straal van 15 km vanaf Borne worden geen reiskosten in rekening gebracht. Daarbuiten is het € 0,50 per km.</p>
-      <div style="margin-top:36px"><a class="knop" href="#contact" data-soort="newborn">Stuur een berichtje</a></div>
     </div>
   </section>
 </section>
@@ -1219,7 +1219,6 @@ body.op-contact .onderbalk{display:none}
         <article class="pakket"><h3 class="pakket__naam">Premium</h3><p class="pakket__prijs">€ 695</p><ul><li>4 uur fotografie</li><li>Professionele nabewerking</li><li>Alle beelden in hoge resolutie</li><li>Locatie binnen 200 km</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="branding" data-pakket="Premium">Meer informatie</a></article>
         <article class="pakket"><h3 class="pakket__naam">VIP</h3><p class="pakket__prijs pakket__prijs--tekst">op aanvraag</p><ul><li>Vanaf 5 uur fotografie</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="branding" data-pakket="VIP">Meer informatie</a></article>
       </div>
-      <div style="margin-top:36px"><a class="knop" href="#contact" data-soort="branding">Stuur een berichtje</a></div>
     </div>
   </section>
 
@@ -1421,6 +1420,7 @@ body.op-contact .onderbalk{display:none}
     <div class="voet__top">
       <a class="woordmerk" href="#home">Denise Leuveld</a>
       <p class="voet__quote">The best thing about memories is making them.</p>
+      <div class="voet__knop"><a class="knop" href="#contact" data-soort="bruiloft" data-soort-pagina>Stuur een berichtje</a></div>
     </div>
     <div class="voet__grid">
       <nav class="voet__menu" aria-label="Footermenu">
