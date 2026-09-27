@@ -80,6 +80,10 @@ em{font-style:italic}
 .shoots__item:hover img{opacity:.85}
 .shoots__item span{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase}
 .shoots__item.is-actief span{text-decoration:underline;text-underline-offset:5px}
+/* tarieven: uitklapmenu dat direct naar het prijsblok van elke shoot springt (aparte tarievenpagina bewaard in bewaard/) */
+.tarieven__binnen{display:grid;min-width:200px;padding:10px 0;background:#fff;border:1px solid var(--lijn);box-shadow:0 30px 60px -36px rgba(0,0,0,.35)}
+.tarieven__binnen a{display:block;padding:13px 26px;font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:var(--inkt);white-space:nowrap;transition:background .2s}
+.tarieven__binnen a:hover,.tarieven__binnen a:focus-visible{background:#F7F6F4}
 
 .menuknop{align-items:center;gap:10px;background:none;border:0;padding:10px 0 10px 10px;cursor:pointer;font:500 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;min-height:44px}
 .menuknop__lijnen{width:22px;height:9px;position:relative}
@@ -90,7 +94,7 @@ em{font-style:italic}
 
 .mobmenu{position:fixed;inset:var(--kop-h) 0 0 0;z-index:58;background:#fff;overflow-y:auto;padding:28px var(--rand) calc(40px + var(--balk-h));border-top:1px solid var(--lijn)}
 .mobmenu__lijst a{display:block;text-decoration:none;font:300 36px/1.15 var(--serif);padding:10px 0;border-bottom:1px solid var(--lijn)}
-.mobmenu__lijst a[href="#shoots"]{border-bottom:0}
+.mobmenu__lijst a[href="#shoots"],.mobmenu__lijst a.mobmenu__kop{border-bottom:0}
 .mobmenu__lijst a.is-actief{font-style:italic}
 .mobmenu__sub{display:flex;flex-wrap:wrap;gap:8px 22px;padding:2px 0 16px;border-bottom:1px solid var(--lijn)}
 .mobmenu__lijst .mobmenu__sub a{font-size:24px;border:0;padding:4px 0;color:var(--grijs)}
@@ -609,7 +613,17 @@ body.op-contact .onderbalk{display:none}
           </div>
         </div>
       </div>
-      <a class="navlink" href="#tarieven" data-nav="tarieven">Tarieven</a>
+      <div class="shoots tarieven-menu">
+        <a class="navlink" href="#bruiloften/prijzen" data-nav="tarieven" aria-haspopup="true">Tarieven <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+        <div class="shoots__paneel">
+          <div class="tarieven__binnen">
+            <a href="#bruiloften/prijzen">Bruiloft</a>
+            <a href="#familie/prijzen">Familie</a>
+            <a href="#newborn/prijzen">Newborn</a>
+            <a href="#branding/prijzen">Branding</a>
+          </div>
+        </div>
+      </div>
       <a class="navlink" href="#over" data-nav="over">Over Denise</a>
       <a class="navlink" href="#contact" data-nav="contact">Contact</a>
       <a class="knop knop--klein kop__cta" href="#contact" data-soort="bruiloft" data-soort-pagina>Is jullie datum nog vrij?</a>
@@ -626,7 +640,8 @@ body.op-contact .onderbalk{display:none}
     <a href="#portfolio" data-nav="portfolio">Portfolio</a>
     <a href="#shoots" data-nav="shoots">Shoots</a>
     <div class="mobmenu__sub"><a href="#bruiloften" data-nav="bruiloften">Bruiloft</a><a href="#familie" data-nav="familie">Familie</a><a href="#newborn" data-nav="newborn">Newborn</a><a href="#branding" data-nav="branding">Branding</a></div>
-    <a href="#tarieven" data-nav="tarieven">Tarieven</a>
+    <a class="mobmenu__kop" href="#bruiloften/prijzen" data-nav="tarieven">Tarieven</a>
+    <div class="mobmenu__sub"><a href="#bruiloften/prijzen">Bruiloft</a><a href="#familie/prijzen">Familie</a><a href="#newborn/prijzen">Newborn</a><a href="#branding/prijzen">Branding</a></div>
     <a href="#over" data-nav="over">Over Denise</a>
     <a href="#contact" data-nav="contact">Contact</a>
   </nav>
@@ -967,7 +982,7 @@ body.op-contact .onderbalk{display:none}
     </div>
   </section>
 
-  <section class="sectie" style="padding-top:0">
+  <section data-anker="prijzen" class="sectie" style="padding-top:0">
     <div class="wrap">
       <div class="kader">
         <h2 class="label">Jullie droombruiloft</h2>
@@ -1106,7 +1121,7 @@ body.op-contact .onderbalk{display:none}
     </div>
   </section>
 
-  <section class="sectie">
+  <section data-anker="prijzen" class="sectie">
     <div class="wrap">
       <div class="pakketten">
         <article class="pakket"><h3 class="pakket__naam">Basic</h3><p class="pakket__prijs">€ 359</p><ul><li>Ca. 1,5 uur fotografie</li><li>Online galerij met minimaal 80 bewerkte foto's om uit te kiezen</li><li>12 foto's naar keuze in hoge resolutie</li><li>Extra foto € 20</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="familie" data-pakket="Basic">Meer informatie</a></article>
@@ -1180,7 +1195,7 @@ body.op-contact .onderbalk{display:none}
     </div>
   </section>
 
-  <section class="sectie">
+  <section data-anker="prijzen" class="sectie">
     <div class="wrap">
       <div class="split" style="align-items:start;margin-bottom:clamp(36px,4vw,56px)">
         <h2 class="h2" style="grid-column:1/5">Pakketten</h2>
@@ -1228,7 +1243,7 @@ body.op-contact .onderbalk{display:none}
     </div>
   </section>
 
-  <section class="sectie">
+  <section data-anker="prijzen" class="sectie">
     <div class="wrap">
       <div class="pakketten">
         <article class="pakket"><h3 class="pakket__naam">Basis</h3><p class="pakket__prijs">€ 349</p><ul><li>1 uur fotografie</li><li>Professionele nabewerking van alle geselecteerde foto's</li><li>Online galerij om uit te kiezen</li><li>30 zelfgekozen beelden in hoge resolutie</li><li>Meer foto's bestellen? Dat kan!</li><li>Locatie naar keuze binnen 100 km vanaf Borne</li></ul><a class="knop knop--klein knop--rand pakket__knop" href="#contact" data-soort="branding" data-pakket="Basis">Meer informatie</a></article>
@@ -1254,99 +1269,6 @@ body.op-contact .onderbalk{display:none}
         </figure>
       </div>
       <div class="midden" style="margin-top:clamp(48px,5vw,72px)"><a class="knop" href="#contact" data-soort="branding">Stuur een berichtje</a></div>
-    </div>
-  </section>
-</section>
-
-<!-- ================= TARIEVEN ================= -->
-<section class="pagina" data-pagina="tarieven" data-titel="Tarieven · Denise Leuveld Fotografie" hidden>
-  <header class="strook op-foto">
-    <img src="fotos/f83.webp" width="2400" height="1600" alt="Bruid stapt in haar trouwjurk in een donkere kamer" decoding="async">
-    <div class="strook__tekst">
-      <h1 class="h1" style="text-transform:uppercase;letter-spacing:.18em;margin-right:-.18em">Tarieven</h1>
-    </div>
-  </header>
-
-  <section class="sectie">
-    <div class="wrap">
-      <div class="tarief-blokken">
-        <article class="tarief-blok">
-          <img src="fotos/k/f16.webp" width="900" height="600" alt="Gezin wandelt over het zand in warm tegenlicht tussen de dennen" loading="lazy" decoding="async">
-          <div class="tb-inhoud">
-            <h2>Familie</h2>
-            <ul class="tarief-rijen">
-              <li><span class="tr-naam">Basic</span><span class="tr-prijs">€ 359</span><span class="tr-info">12 foto's naar keuze in hoge resolutie · extra foto € 20</span><a class="tr-knop" href="#contact" data-soort="familie" data-pakket="Basic">Meer informatie</a></li>
-              <li><span class="tr-naam">Premium</span><span class="tr-prijs">€ 429</span><span class="tr-info">35 foto's naar keuze in hoge resolutie · harmonica-album met 10 foto's</span><a class="tr-knop" href="#contact" data-soort="familie" data-pakket="Premium">Meer informatie</a></li>
-              <li><span class="tr-naam">Luxe</span><span class="tr-prijs">€ 479</span><span class="tr-info">Alle foto's in hoge resolutie · linnen album 15 × 20 cm met 30 foto's</span><a class="tr-knop" href="#contact" data-soort="familie" data-pakket="Luxe">Meer informatie</a></li>
-              <li><span class="tr-naam">Super de luxe</span><span class="tr-prijs">€ 549</span><span class="tr-info">Alle foto's in hoge resolutie · groot linnen album 20 × 30 cm met 50 foto's</span><a class="tr-knop" href="#contact" data-soort="familie" data-pakket="Super de luxe">Meer informatie</a></li>
-            </ul>
-            <a class="knop knop--rand" href="#familie">Over de familieshoot</a>
-          </div>
-        </article>
-        <article class="tarief-blok">
-          <img src="fotos/k/f57.webp" width="900" height="600" alt="Moeder houdt haar baby lachend tegen zich aan" loading="lazy" decoding="async">
-          <div class="tb-inhoud">
-            <h2>Newborn</h2>
-            <ul class="tarief-rijen">
-              <li><span class="tr-naam">Basic</span><span class="tr-prijs">€ 359</span><span class="tr-info">12 foto's naar keuze in hoge resolutie · extra foto € 20</span><a class="tr-knop" href="#contact" data-soort="newborn" data-pakket="Basic">Meer informatie</a></li>
-              <li><span class="tr-naam">Premium</span><span class="tr-prijs">€ 429</span><span class="tr-info">35 foto's naar keuze · harmonica-album met 10 foto's</span><a class="tr-knop" href="#contact" data-soort="newborn" data-pakket="Premium">Meer informatie</a></li>
-              <li><span class="tr-naam">Luxe</span><span class="tr-prijs">€ 479</span><span class="tr-info">Alle foto's in hoge resolutie · linnen album 15 × 20 cm met 30 foto's</span><a class="tr-knop" href="#contact" data-soort="newborn" data-pakket="Luxe">Meer informatie</a></li>
-              <li><span class="tr-naam">Super</span><span class="tr-prijs">€ 549</span><span class="tr-info">Alle foto's in hoge resolutie · groot linnen album 20 × 30 cm met 50 foto's</span><a class="tr-knop" href="#contact" data-soort="newborn" data-pakket="Super">Meer informatie</a></li>
-            </ul>
-            <a class="knop knop--rand" href="#newborn">Over de newbornshoot</a>
-          </div>
-        </article>
-        <article class="tarief-blok">
-          <img src="fotos/k/f45.webp" width="900" height="600" alt="Vier ondernemers overleggen lachend aan tafel met een laptop" loading="lazy" decoding="async">
-          <div class="tb-inhoud">
-            <h2>Branding</h2>
-            <ul class="tarief-rijen">
-              <li><span class="tr-naam">Basis</span><span class="tr-prijs">€ 349</span><span class="tr-info">1 uur fotografie · 30 zelfgekozen beelden in hoge resolutie</span><a class="tr-knop" href="#contact" data-soort="branding" data-pakket="Basis">Meer informatie</a></li>
-              <li><span class="tr-naam">Uitgebreid</span><span class="tr-prijs">€ 499</span><span class="tr-info">2 uur fotografie · 60 zelfgekozen beelden in hoge resolutie</span><a class="tr-knop" href="#contact" data-soort="branding" data-pakket="Uitgebreid">Meer informatie</a></li>
-              <li><span class="tr-naam">Premium</span><span class="tr-prijs">€ 695</span><span class="tr-info">4 uur fotografie · alle beelden in hoge resolutie</span><a class="tr-knop" href="#contact" data-soort="branding" data-pakket="Premium">Meer informatie</a></li>
-              <li><span class="tr-naam">VIP</span><span class="tr-prijs woord">op aanvraag</span><span class="tr-info">Vanaf 5 uur fotografie</span><a class="tr-knop" href="#contact" data-soort="branding" data-pakket="VIP">Meer informatie</a></li>
-            </ul>
-            <a class="knop knop--rand" href="#branding">Over de brandingshoot</a>
-          </div>
-        </article>
-      </div>
-
-      <article class="tarief-bruiloft">
-        <figure class="tarief-bruiloft__foto"><img src="fotos/k/f31.webp" width="600" height="900" alt="Eerste dans van het bruidspaar tussen de gasten" loading="lazy" decoding="async"></figure>
-        <div class="tarief-bruiloft__tekst">
-          <p class="label">Jullie droombruiloft</p>
-          <h2 class="prijs-groot"><span>vanaf</span>€ 2.150</h2>
-          <p class="kader__intro" style="margin:0">Bruiloftpakketten beginnen vanaf € 2.150 en zijn inclusief:</p>
-          <ul class="inclusief">
-            <li>6 uur fotografie op jullie mooiste dag</li>
-            <li>Een kennismakingsgesprek om elkaar te leren kennen en jullie wensen te bespreken</li>
-            <li>Grote preview van minimaal 50 beelden, enkele dagen na jullie bruiloft</li>
-            <li>Minimaal 400 professioneel bewerkte foto's in hoge resolutie</li>
-            <li>Persoonlijke galerij, die jullie eenvoudig kunnen delen met vrienden en familie</li>
-            <li>Een linnen fotoalbum van 20 × 20 cm met de allermooiste momenten</li>
-          </ul>
-          <a class="knop" href="#contact" data-soort="bruiloft">Is jullie datum nog vrij?</a>
-        </div>
-      </article>
-      <p class="pakket-noot" style="text-align:center;max-width:none">Prijzen zijn inclusief btw.</p>
-
-      <div class="tarief-reviews">
-        <div class="reviews__kop"><h2 class="h2">Lovely <em>reviews</em></h2></div>
-        <div class="reviews reviews--licht reviews--3">
-          <figure class="review">
-            <blockquote class="review__q">We zijn super blij dat we voor jou hebben gekozen als onze trouwfotograaf! De foto's zijn fantastisch en het hele contact voorafgaand en na de bruiloft was super fijn.</blockquote>
-            <figcaption class="review__naam">K &amp; M · bruidspaar</figcaption>
-          </figure>
-          <figure class="review">
-            <blockquote class="review__q">Zijn al heel vaak door haar op de gevoelige plaat vastgelegd. Willen ook geen andere fotograaf meer.</blockquote>
-            <figcaption class="review__naam">Arjan</figcaption>
-          </figure>
-          <figure class="review">
-            <blockquote class="review__q">Het resultaat is schitterend; ik ben er zo blij mee en heb nu toegang tot een heleboel foto's die ik zakelijk kan gebruiken. Het is het echt waard!</blockquote>
-            <figcaption class="review__naam">Meike · brandingshoot</figcaption>
-          </figure>
-        </div>
-      </div>
     </div>
   </section>
 </section>
@@ -1536,7 +1458,7 @@ body.op-contact .onderbalk{display:none}
       <nav class="voet__menu" aria-label="Footermenu">
         <a href="#bruiloften">Bruiloften</a><a href="#familie">Familie</a>
         <a href="#portfolio">Portfolio</a><a href="#newborn">Newborn</a>
-        <a href="#tarieven">Tarieven</a><a href="#branding">Branding</a>
+        <a href="#bruiloften/prijzen">Tarieven</a><a href="#branding">Branding</a>
         <a href="#over">Over Denise</a><a href="#contact">Contact</a>
       </nav>
       <div class="voet__contact">
@@ -1810,7 +1732,7 @@ body.op-contact .onderbalk{display:none}
   toonFilter('bruiloft');
 
   /* ---------- router ---------- */
-  var ROUTES = ['home','shoots','bruiloften','portfolio','familie','newborn','branding','tarieven','over','contact'];
+  var ROUTES = ['home','shoots','bruiloften','portfolio','familie','newborn','branding','over','contact'];
   var SHOOTS = ['familie','newborn','branding'];
   var paginas = document.querySelectorAll('.pagina');
   var mobmenu = document.getElementById('mobmenu');
@@ -1822,8 +1744,17 @@ body.op-contact .onderbalk{display:none}
     document.documentElement.style.overflow = '';
     var f = document.activeElement; if (f && f.closest && f.closest('.shoots')) f.blur();   /* uitklapmenu dicht na een klik */
   }
+  /* #pagina/anker, bijv. #familie/prijzen: pagina tonen en naar dat blok springen */
+  function naarAnker(p, anker){
+    var el = p && p.querySelector('[data-anker="' + anker + '"]'); if (!el) return;
+    var doel = el.firstElementChild || el;
+    function ga(){ window.scrollTo(0, Math.max(0, doel.getBoundingClientRect().top + window.scrollY - kop.offsetHeight - 32)); }
+    requestAnimationFrame(ga); setTimeout(ga, 350);
+  }
   function route(){
-    var id = (location.hash || '').replace('#','').toLowerCase();
+    var delen = (location.hash || '').replace('#','').toLowerCase().split('/');
+    var id = delen[0], anker = delen[1] || '';
+    if (id === 'tarieven') { id = 'bruiloften'; anker = 'prijzen'; }   /* oude links naar de tarievenpagina */
     if (ROUTES.indexOf(id) === -1) id = 'home';
     paginas.forEach(function(p){ p.hidden = p.getAttribute('data-pagina') !== id; });
     document.querySelectorAll('[data-nav]').forEach(function(a){
@@ -1842,12 +1773,17 @@ body.op-contact .onderbalk{display:none}
     sluitMenus();
     window.scrollTo(0,0);
     schikAlles();
+    if (anker) naarAnker(p, anker);
     if (naarFormulier) setTimeout(toonFormulier, 80);
   }
   window.addEventListener('hashchange', route);
   document.addEventListener('click', function(e){
     var a = e.target.closest('a[href^="#"]');
-    if (a && a.getAttribute('href') === (location.hash || '#home')) { e.preventDefault(); sluitMenus(); window.scrollTo({top:0,behavior:'smooth'}); }
+    if (a && a.getAttribute('href') === (location.hash || '#home')) {
+      e.preventDefault(); sluitMenus();
+      var anker = (location.hash.split('/')[1] || '').toLowerCase();
+      if (anker) naarAnker(document.querySelector('.pagina:not([hidden])'), anker); else window.scrollTo({top:0,behavior:'smooth'});
+    }
   });
   route();
 
